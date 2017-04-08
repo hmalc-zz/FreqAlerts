@@ -17,6 +17,7 @@
 		B44269A31E9896A70054EFD1 /* FreqAlertsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44269A21E9896A70054EFD1 /* FreqAlertsTests.swift */; };
 		B44269AE1E9896A70054EFD1 /* FreqAlertsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44269AD1E9896A70054EFD1 /* FreqAlertsUITests.swift */; };
 		B4518E701E997A2D00D8E66D /* UserDefaultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4518E6F1E997A2D00D8E66D /* UserDefaultsController.swift */; };
+		B4DD3D931E99A18700995F60 /* slowrise.m4r in Resources */ = {isa = PBXBuildFile; fileRef = B4DD3D921E99A17200995F60 /* slowrise.m4r */; };
 		B4DFAEA91E99542F00B1AA0A /* FormattingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DFAEA81E99542F00B1AA0A /* FormattingService.swift */; };
 		B4DFAEAD1E99597100B1AA0A /* NotificationTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DFAEAB1E99597100B1AA0A /* NotificationTypeCell.swift */; };
 		B4DFAEAE1E99597100B1AA0A /* NotificationTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4DFAEAC1E99597100B1AA0A /* NotificationTypeCell.xib */; };
@@ -67,6 +68,7 @@
 		B44269AD1E9896A70054EFD1 /* FreqAlertsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreqAlertsUITests.swift; sourceTree = "<group>"; };
 		B44269AF1E9896A70054EFD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4518E6F1E997A2D00D8E66D /* UserDefaultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsController.swift; sourceTree = "<group>"; };
+		B4DD3D921E99A17200995F60 /* slowrise.m4r */ = {isa = PBXFileReference; lastKnownFileType = file; path = slowrise.m4r; sourceTree = "<group>"; };
 		B4DFAEA81E99542F00B1AA0A /* FormattingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormattingService.swift; sourceTree = "<group>"; };
 		B4DFAEAB1E99597100B1AA0A /* NotificationTypeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTypeCell.swift; sourceTree = "<group>"; };
 		B4DFAEAC1E99597100B1AA0A /* NotificationTypeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationTypeCell.xib; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				B4DFAEB51E996CDC00B1AA0A /* ImageService.swift */,
 				B4DFAEAA1E99595200B1AA0A /* NotificationPreferenceCells */,
 				B4518E6F1E997A2D00D8E66D /* UserDefaultsController.swift */,
+				B4DD3D921E99A17200995F60 /* slowrise.m4r */,
 			);
 			path = FreqAlerts;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 			files = (
 				B44269981E9896A70054EFD1 /* LaunchScreen.storyboard in Resources */,
 				B44269951E9896A70054EFD1 /* Assets.xcassets in Resources */,
+				B4DD3D931E99A18700995F60 /* slowrise.m4r in Resources */,
 				B4DFAEAE1E99597100B1AA0A /* NotificationTypeCell.xib in Resources */,
 				B44269931E9896A70054EFD1 /* Main.storyboard in Resources */,
 			);

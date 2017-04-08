@@ -27,14 +27,14 @@ class NotificationTypeCell: UICollectionViewCell {
         title.text = alarmResponsePreference.title
         summary.text = alarmResponsePreference.summary
         iconImage.image = alarmResponsePreference.icon.withColor(color: alarmResponsePreference.colorHex)
+        
+        if UserDefaultsService.getBoolValueForKey(keyString: alarmResponsePreference.defaultKey) == nil {
+            UserDefaultsService.setBoolValueForKey(keyString: alarmResponsePreference.defaultKey, bool: true)
+        }
     }
     
     @IBAction func `switch`(_ sender: UISwitch) {
-        if sender.isOn {
-            
-        } else {
-            
-        }
+        UserDefaultsService.setBoolValueForKey(keyString: alarmResponsePreference.defaultKey, bool: sender.isOn)
     }
     
 }

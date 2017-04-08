@@ -23,23 +23,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rWx-U8-Acg" customClass="SwiftSiriWaveformView" customModule="SwiftSiriWaveformView">
-                                <rect key="frame" x="0.0" y="220" width="320" height="128"/>
+                                <rect key="frame" x="0.0" y="420" width="320" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="st3-et-H0I"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URI-C8-VSM">
-                                <rect key="frame" x="16" y="504" width="288" height="44"/>
-                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="yQW-IZ-DUj"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
-                                <state key="normal" title="Listen">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test" translatesAutoresizingMaskIntoConstraints="NO" id="S5U-Nr-fDA">
                                 <rect key="frame" x="23" y="27" width="30" height="30"/>
                                 <constraints>
@@ -74,17 +63,31 @@
                                     <action selector="handleSettings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AgV-d7-QmL"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URI-C8-VSM">
+                                <rect key="frame" x="16" y="262" width="288" height="44"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="yQW-IZ-DUj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="Listen">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleListen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DEx-tr-0c2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6d6-KB-hw2" firstAttribute="centerX" secondItem="uS4-M3-78B" secondAttribute="centerX" id="2gp-0q-crs"/>
                             <constraint firstItem="6d6-KB-hw2" firstAttribute="centerY" secondItem="uS4-M3-78B" secondAttribute="centerY" id="8ZF-9z-490"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rWx-U8-Acg" secondAttribute="bottom" constant="20" id="Ha4-MT-rA9"/>
                             <constraint firstAttribute="trailing" secondItem="rWx-U8-Acg" secondAttribute="trailing" id="HwS-Dm-uUX"/>
                             <constraint firstItem="S5U-Nr-fDA" firstAttribute="centerY" secondItem="hHg-Cl-EAf" secondAttribute="centerY" id="KTd-mb-POu"/>
+                            <constraint firstItem="URI-C8-VSM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Wal-cd-5eb"/>
                             <constraint firstItem="rWx-U8-Acg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bYe-1S-3Kr"/>
-                            <constraint firstItem="rWx-U8-Acg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="d4E-Nh-hSc"/>
                             <constraint firstItem="hHg-Cl-EAf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="dVA-dG-lfY"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="URI-C8-VSM" secondAttribute="bottom" constant="20" id="dmc-4K-JJO"/>
                             <constraint firstItem="S5U-Nr-fDA" firstAttribute="centerX" secondItem="hHg-Cl-EAf" secondAttribute="centerX" id="gX3-6L-w7Y"/>
                             <constraint firstAttribute="trailingMargin" secondItem="URI-C8-VSM" secondAttribute="trailing" id="jLM-ZZ-4Q9"/>
                             <constraint firstAttribute="trailingMargin" secondItem="uS4-M3-78B" secondAttribute="trailing" id="krS-I0-BSN"/>
@@ -95,6 +98,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="GHV-xi-c0a"/>
                     <connections>
+                        <outlet property="mainButton" destination="URI-C8-VSM" id="KUv-Jg-mUY"/>
                         <outlet property="waveform" destination="rWx-U8-Acg" id="Kd3-jJ-mvz"/>
                     </connections>
                 </viewController>

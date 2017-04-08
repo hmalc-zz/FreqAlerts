@@ -78,13 +78,16 @@ class ListenVC: UIViewController {
             if frequencySamples.count > 0 {
                 let index = Int(floor(Double(frequencySamples.count)/2))
                 frequencyLabel.text = frequencySamples[index].formatFrequency()
+                medianFrequency = frequencySamples[index]
             }
             gainSamples.append(tracker.amplitude)
             gainSamples = gainSamples.sorted()
             if gainSamples.count > 0 {
                 let index = Int(floor(Double(gainSamples.count)/2))
                 volumeLabel.text = gainSamples[index].formatGain()
+                medianGain = gainSamples[index]
             }
+            
         }
         
         waveView.amplitude = CGFloat(tracker.amplitude)
@@ -93,6 +96,14 @@ class ListenVC: UIViewController {
     func listeningPeriodDidFinish(){
         isListening = false
         
+        if let frequency = medianFrequency {
+            UserDefaultsService.setValueForKey(keyString: UserDefaultsService.FREQUENCY_CUTOFF_VALUE, value: frequency)
+        }
+        
+        if let gain = medianGain {
+            UserDefaultsService.setValueForKey(keyString: UserDefaultsService.GAIN_CUTOFF_VALUE, value: gain)
+        }
+
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "PreferencesVC") as! PreferencesVC
         self.navigationController?.pushViewController(vc, animated: true)
         

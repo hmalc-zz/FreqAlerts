@@ -23,6 +23,7 @@ struct AlarmResponsePreference {
     let icon: UIImage!
     let colorHex: UIColor!
     let index: Int
+    let defaultKey: String!
     
     init(alarmResponseType: AlarmResponseType) {
         
@@ -34,16 +35,19 @@ struct AlarmResponsePreference {
             self.summary = "Pulse the flash"
             self.icon = #imageLiteral(resourceName: "flash")
             self.colorHex = UIColor(hex: "FFCC00") // Yellow
+            self.defaultKey = UserDefaultsService.SHOULD_FLASH
         case .vibrate:
             self.title = "Vibrate"
             self.summary = "Trigger vibration during alarm"
             self.icon = #imageLiteral(resourceName: "vibration")
             self.colorHex = UIColor(hex: "FF2D55") // Hot Pink
+            self.defaultKey = UserDefaultsService.SHOULD_VIBRATE
         case .sound:
             self.title = "Sound"
             self.summary = "Play a sound"
             self.icon = #imageLiteral(resourceName: "sound")
             self.colorHex = UIColor(hex: "34AADC") // Blue
+            self.defaultKey = UserDefaultsService.SHOULD_PLAY_SOUND
         }
     }
 }

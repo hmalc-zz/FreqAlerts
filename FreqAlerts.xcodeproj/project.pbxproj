@@ -16,11 +16,13 @@
 		B44269981E9896A70054EFD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B44269961E9896A70054EFD1 /* LaunchScreen.storyboard */; };
 		B44269A31E9896A70054EFD1 /* FreqAlertsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44269A21E9896A70054EFD1 /* FreqAlertsTests.swift */; };
 		B44269AE1E9896A70054EFD1 /* FreqAlertsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44269AD1E9896A70054EFD1 /* FreqAlertsUITests.swift */; };
+		B4518E701E997A2D00D8E66D /* UserDefaultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4518E6F1E997A2D00D8E66D /* UserDefaultsController.swift */; };
 		B4DFAEA91E99542F00B1AA0A /* FormattingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DFAEA81E99542F00B1AA0A /* FormattingService.swift */; };
 		B4DFAEAD1E99597100B1AA0A /* NotificationTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DFAEAB1E99597100B1AA0A /* NotificationTypeCell.swift */; };
 		B4DFAEAE1E99597100B1AA0A /* NotificationTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4DFAEAC1E99597100B1AA0A /* NotificationTypeCell.xib */; };
 		B4DFAEB01E995A7800B1AA0A /* PreferencesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DFAEAF1E995A7800B1AA0A /* PreferencesVC.swift */; };
-		B4DFAEB21E995B2300B1AA0A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DFAEB11E995B2300B1AA0A /* Constants.swift */; };
+		B4DFAEB41E99651400B1AA0A /* AlarmResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DFAEB31E99651400B1AA0A /* AlarmResponseType.swift */; };
+		B4DFAEB61E996CDC00B1AA0A /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DFAEB51E996CDC00B1AA0A /* ImageService.swift */; };
 		DACB295FFCC28D086C3F89ED /* Pods_FreqAlerts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B297829F8F503856FF815D /* Pods_FreqAlerts.framework */; };
 		F9DB2E53BDF25C23EC4B2DC0 /* Pods_FreqAlertsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE53042E3E902AFF11997EB5 /* Pods_FreqAlertsUITests.framework */; };
 /* End PBXBuildFile section */
@@ -64,11 +66,13 @@
 		B44269A91E9896A70054EFD1 /* FreqAlertsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreqAlertsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B44269AD1E9896A70054EFD1 /* FreqAlertsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreqAlertsUITests.swift; sourceTree = "<group>"; };
 		B44269AF1E9896A70054EFD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4518E6F1E997A2D00D8E66D /* UserDefaultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsController.swift; sourceTree = "<group>"; };
 		B4DFAEA81E99542F00B1AA0A /* FormattingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormattingService.swift; sourceTree = "<group>"; };
 		B4DFAEAB1E99597100B1AA0A /* NotificationTypeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTypeCell.swift; sourceTree = "<group>"; };
 		B4DFAEAC1E99597100B1AA0A /* NotificationTypeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationTypeCell.xib; sourceTree = "<group>"; };
 		B4DFAEAF1E995A7800B1AA0A /* PreferencesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesVC.swift; sourceTree = "<group>"; };
-		B4DFAEB11E995B2300B1AA0A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B4DFAEB31E99651400B1AA0A /* AlarmResponseType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmResponseType.swift; sourceTree = "<group>"; };
+		B4DFAEB51E996CDC00B1AA0A /* ImageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		C20D0C7F228DB71B458D24BF /* Pods-FreqAlerts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreqAlerts.release.xcconfig"; path = "Pods/Target Support Files/Pods-FreqAlerts/Pods-FreqAlerts.release.xcconfig"; sourceTree = "<group>"; };
 		DE53042E3E902AFF11997EB5 /* Pods_FreqAlertsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreqAlertsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -149,7 +153,6 @@
 		B442698C1E9896A70054EFD1 /* FreqAlerts */ = {
 			isa = PBXGroup;
 			children = (
-				B4DFAEAA1E99595200B1AA0A /* NotificationPreferenceCells */,
 				B442698D1E9896A70054EFD1 /* AppDelegate.swift */,
 				B442698F1E9896A70054EFD1 /* ViewController.swift */,
 				B42893CF1E99363500066612 /* ListenVC.swift */,
@@ -159,7 +162,10 @@
 				B44269961E9896A70054EFD1 /* LaunchScreen.storyboard */,
 				B44269991E9896A70054EFD1 /* Info.plist */,
 				B4DFAEAF1E995A7800B1AA0A /* PreferencesVC.swift */,
-				B4DFAEB11E995B2300B1AA0A /* Constants.swift */,
+				B4DFAEB31E99651400B1AA0A /* AlarmResponseType.swift */,
+				B4DFAEB51E996CDC00B1AA0A /* ImageService.swift */,
+				B4DFAEAA1E99595200B1AA0A /* NotificationPreferenceCells */,
+				B4518E6F1E997A2D00D8E66D /* UserDefaultsController.swift */,
 			);
 			path = FreqAlerts;
 			sourceTree = "<group>";
@@ -476,12 +482,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4DFAEB41E99651400B1AA0A /* AlarmResponseType.swift in Sources */,
+				B4DFAEB61E996CDC00B1AA0A /* ImageService.swift in Sources */,
 				B4DFAEAD1E99597100B1AA0A /* NotificationTypeCell.swift in Sources */,
 				B44269901E9896A70054EFD1 /* ViewController.swift in Sources */,
 				B42893D01E99363500066612 /* ListenVC.swift in Sources */,
 				B4DFAEB01E995A7800B1AA0A /* PreferencesVC.swift in Sources */,
-				B4DFAEB21E995B2300B1AA0A /* Constants.swift in Sources */,
 				B4DFAEA91E99542F00B1AA0A /* FormattingService.swift in Sources */,
+				B4518E701E997A2D00D8E66D /* UserDefaultsController.swift in Sources */,
 				B442698E1E9896A70054EFD1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

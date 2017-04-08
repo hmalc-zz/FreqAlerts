@@ -7,200 +7,229 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0768303458B32B0084B3E213806D84BB /* SwiftSiriWaveformView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 026C7922DFF6D51BB83B8EB20AF7E810 /* SwiftSiriWaveformView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		130C33D8ED22E6F0776D777BA0DA475C /* SwiftSiriWaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE283CCAB6EED6616A10F77E52F21C3 /* SwiftSiriWaveformView.swift */; };
-		2259029673DC2F3ED96DE472CC1AD52F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		2E58C039649469CACBFB48BC38FAE1CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		3ED4B723215D64733033771209484E66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		3F665426A30384B0210DC9F6DA5C2436 /* SwiftSiriWaveformView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9251F3BAD4B6E1C529F67A962F37FF41 /* SwiftSiriWaveformView-dummy.m */; };
+		0F1EC07C8DD38DCC0D2CB0F7939B7ADD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		1B3881BC2A593E70997EB237F4CB0D05 /* Pods-FreqAlerts-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA733B443F94F48183094C40CBC4D9D0 /* Pods-FreqAlerts-dummy.m */; };
+		2259029673DC2F3ED96DE472CC1AD52F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
 		47653E6F4E866EA53EEA44E785DC17EE /* Pods-FreqAlertsTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A64FA1747C0CCF10B38B0FFF6D7F9 /* Pods-FreqAlertsTests-dummy.m */; };
+		5CEB3CAD8A478B84AB9341EDF8C9D8D1 /* Pods-FreqAlerts-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 702BD84D58425A1F7315BDB8D3AD9554 /* Pods-FreqAlerts-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EADE880F3726F353A78A394963A80A3 /* Hex-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1084545E24AA444078C8624CC2FD5537 /* Hex-dummy.m */; };
+		696B0D1616735F09C83C438E207F06D2 /* Hex-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A70EBD3DC9F317474B09CBD42E761D2A /* Hex-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		789EA75CACA652909961EC800E9EB7D3 /* Pods-FreqAlertsUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF867ECDF6B2AA29CA0002E4E8D1180 /* Pods-FreqAlertsUITests-dummy.m */; };
-		7D4767AEF850FCB5D60036E059488F43 /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46258779825381E5A6241826554E005 /* KDCircularProgress.swift */; };
-		7F8F8A3E31E9DDB734510EB9835FB119 /* Pods-FreqAlerts-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA733B443F94F48183094C40CBC4D9D0 /* Pods-FreqAlerts-dummy.m */; };
-		8121E73C4AA88D04F0B3B25EE813C6C7 /* Pods-FreqAlerts-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 702BD84D58425A1F7315BDB8D3AD9554 /* Pods-FreqAlerts-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		93F4AEA373840E69F9055F8F556A97E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		9AEC64FA01ACF92A6F4FF95FB44B4810 /* KDCircularProgress-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BAC3BA1AC424F509C52A012B136830D /* KDCircularProgress-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD810E9D79A84647CA3BF4ACA415B450 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		7D4767AEF850FCB5D60036E059488F43 /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E03E2CC5232D80A07DD16501848B552 /* KDCircularProgress.swift */; };
+		8E932D2CF7A7C1BAB61CB3EDC07A3F58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		93F4AEA373840E69F9055F8F556A97E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		9AEC64FA01ACF92A6F4FF95FB44B4810 /* KDCircularProgress-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 182CE3668E137549339939046800F976 /* KDCircularProgress-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD810E9D79A84647CA3BF4ACA415B450 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
 		AEDDDA838EAC8C63BA04633B5E4C8EEB /* Pods-FreqAlertsUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 992020C5A300692CBF33ADC4CCE2369A /* Pods-FreqAlertsUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7360E28AA04F37AFD30777C02EF49C3 /* KDCircularProgress-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF3D6F8069F693EF4658A8065B8CD34 /* KDCircularProgress-dummy.m */; };
+		B01B1FE5C1A996F2D7E17C12CF11BE38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		B3735C71EC67493E4A09CFF846958951 /* SwiftSiriWaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53120047C39E4110117EDCBD1E768CC /* SwiftSiriWaveformView.swift */; };
+		C7CCE2AE10716915B1934CAB4FB2AAE2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
+		D3A7560D2372BA78BE35459B31C41B83 /* SwiftSiriWaveformView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E388DBA25F93EE94E9874FD9259F88 /* SwiftSiriWaveformView-dummy.m */; };
+		D7360E28AA04F37AFD30777C02EF49C3 /* KDCircularProgress-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F919755FC37C3CB86BEBF639C76E78 /* KDCircularProgress-dummy.m */; };
+		DBB754F08D9A792D22F9AC7EC5CF4F76 /* SwiftSiriWaveformView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BEB87D6A022602EFC39E55A74E3D4D /* SwiftSiriWaveformView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DCF751813F3C796BA1336489DCCFA5F0 /* Pods-FreqAlertsTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E5B5DACB176DFFFE9B069BC47E68DD3F /* Pods-FreqAlertsTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF0D980228E725EE72B1AAE4C859EE41 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF5403F32A4AC36C8A248B774DEDBE /* UIColor+Hex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DF6B05D5A5C7A377408B4EDC45951F34 /* PBXContainerItemProxy */ = {
+		22618B853CE70A39B82A276A9E723B41 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 322428ECC8C5EC71F14C92233787C7AC;
 			remoteInfo = KDCircularProgress;
 		};
-		E6266053F718C3077CC0C7B42CF14CE6 /* PBXContainerItemProxy */ = {
+		84B3FAF9E92C624C8E6DE2F32BA87FB2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C4DCE20B657ED1FEF68B636AB568FD46;
+			remoteGlobalIDString = 0A2CED212E688D56D6F85B22ED4CE0A8;
 			remoteInfo = SwiftSiriWaveformView;
+		};
+		C3A12202488B46C33A4E3924D00F793B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 682C458B69A37816E38465B82FFC3756;
+			remoteInfo = Hex;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0096A854979E340768FDDD5F36F4045B /* AKPhaseDistortionOscillatorBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPhaseDistortionOscillatorBankAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKPhaseDistortionOscillatorBankAudioUnit.h; sourceTree = "<group>"; };
-		00CDE960E66F76AEEEA3211A0AA3DC12 /* AKClipperAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKClipperAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKClipperAudioUnit.h; sourceTree = "<group>"; };
-		026C7922DFF6D51BB83B8EB20AF7E810 /* SwiftSiriWaveformView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSiriWaveformView-umbrella.h"; sourceTree = "<group>"; };
+		008E404996C9DFE233F9247EFA971EE6 /* Hex.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Hex.modulemap; sourceTree = "<group>"; };
 		030CE231BCABCB5F63138A5AA6682967 /* Pods-FreqAlertsTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FreqAlertsTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0CCAE3AB19EC913F55A629F3D868AEF0 /* AKFMOscillatorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFMOscillatorAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKFMOscillatorAudioUnit.h; sourceTree = "<group>"; };
-		0DD53F0255945A8EA8A4EEB3FE83853A /* AKShakerAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKShakerAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKShakerAudioUnit.h; sourceTree = "<group>"; };
+		03244409C38570D1EA8D0AF4FA645524 /* EZAudioFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFile.h; path = iOS/AudioKit.framework/Headers/EZAudioFile.h; sourceTree = "<group>"; };
+		08C0166F6D71942A92DB0090558C6C91 /* EZAudioPlotGL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioPlotGL.h; path = iOS/AudioKit.framework/Headers/EZAudioPlotGL.h; sourceTree = "<group>"; };
+		0B5A3DC0FF33DF7F7E9AC02CC935B028 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = iOS/AudioKit.framework; sourceTree = "<group>"; };
+		0BC0774BD2BEA12D1919530405FA2443 /* KDCircularProgress-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KDCircularProgress-prefix.pch"; sourceTree = "<group>"; };
+		0CC793669E2CDC7D0AAEC644E3DE0487 /* AKOperationGeneratorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKOperationGeneratorAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKOperationGeneratorAudioUnit.h; sourceTree = "<group>"; };
 		0EC4824F2A66B2BB3E4F080E35A6DF72 /* Pods-FreqAlertsUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FreqAlertsUITests.modulemap"; sourceTree = "<group>"; };
-		0EEE506F5E99958AB25B3C5DA4729B58 /* AKPhaseDistortionOscillatorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPhaseDistortionOscillatorAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKPhaseDistortionOscillatorAudioUnit.h; sourceTree = "<group>"; };
 		10002C8A9AEFE94D4B97258F5E0DDE31 /* Pods-FreqAlerts-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FreqAlerts-acknowledgements.markdown"; sourceTree = "<group>"; };
-		113667D29CAC11EC09C67061605F72BB /* KDCircularProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KDCircularProgress.framework; path = KDCircularProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1196776833311E69CBB03DB7A2B3D18C /* AKToneComplementFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKToneComplementFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKToneComplementFilterAudioUnit.h; sourceTree = "<group>"; };
-		15AA7432843A76ED28E6CB2DD427E00F /* AKMorphingOscillatorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKMorphingOscillatorAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKMorphingOscillatorAudioUnit.h; sourceTree = "<group>"; };
-		16E296373B581CA129D7BBADC6EF0A42 /* EZRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRecorder.h; path = iOS/AudioKit.framework/Headers/EZRecorder.h; sourceTree = "<group>"; };
-		187EC00880BAB60892D6C6874184B447 /* AKDCBlockAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKDCBlockAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKDCBlockAudioUnit.h; sourceTree = "<group>"; };
-		1AD07085453DD38644B2ECC172140655 /* SwiftSiriWaveformView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSiriWaveformView.xcconfig; sourceTree = "<group>"; };
-		1EBE87CBAB70FEAA0B9D72C258B9F341 /* EZAudioPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioPlayer.h; path = iOS/AudioKit.framework/Headers/EZAudioPlayer.h; sourceTree = "<group>"; };
-		21BDEB02FE8CB6D9B8437175248EC88C /* Pods_FreqAlertsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FreqAlertsTests.framework; path = "Pods-FreqAlertsTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1084545E24AA444078C8624CC2FD5537 /* Hex-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Hex-dummy.m"; sourceTree = "<group>"; };
+		12EE5F933B901316C9F2C7A176D0805E /* AKBalancerAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKBalancerAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKBalancerAudioUnit.h; sourceTree = "<group>"; };
+		13A142FD2F82B11D58285E697F640057 /* AKLowPassButterworthFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKLowPassButterworthFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKLowPassButterworthFilterAudioUnit.h; sourceTree = "<group>"; };
+		140058EA9C07388E5F6D55431052034A /* AKHighShelfParametricEqualizerFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKHighShelfParametricEqualizerFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKHighShelfParametricEqualizerFilterAudioUnit.h; sourceTree = "<group>"; };
+		154C16537042AF95D2283AC93C5B105C /* EZAudioFloatData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFloatData.h; path = iOS/AudioKit.framework/Headers/EZAudioFloatData.h; sourceTree = "<group>"; };
+		182CE3668E137549339939046800F976 /* KDCircularProgress-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KDCircularProgress-umbrella.h"; sourceTree = "<group>"; };
+		187EBC9598C80B752D72FB872DB5CF9F /* Hex.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Hex.xcconfig; sourceTree = "<group>"; };
+		19BEB87D6A022602EFC39E55A74E3D4D /* SwiftSiriWaveformView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSiriWaveformView-umbrella.h"; sourceTree = "<group>"; };
+		1BCF5403F32A4AC36C8A248B774DEDBE /* UIColor+Hex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Hex.swift"; path = "Source/UIColor+Hex.swift"; sourceTree = "<group>"; };
+		1E03E2CC5232D80A07DD16501848B552 /* KDCircularProgress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KDCircularProgress.swift; path = KDCircularProgress/KDCircularProgress.swift; sourceTree = "<group>"; };
+		2017CE4D2724B69BDAD7E7F7AB0E181D /* AKModalResonanceFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKModalResonanceFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKModalResonanceFilterAudioUnit.h; sourceTree = "<group>"; };
+		216A5335A6B736327E7D6C843F111C77 /* AKClarinetAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKClarinetAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKClarinetAudioUnit.h; sourceTree = "<group>"; };
+		21BFE97AC7FCAE5D7D751090706B95F3 /* SwiftSiriWaveformView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSiriWaveformView.xcconfig; sourceTree = "<group>"; };
 		249BCABA27D8CEFBDC6D049F45F46457 /* Pods-FreqAlerts-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FreqAlerts-frameworks.sh"; sourceTree = "<group>"; };
-		2BE283CCAB6EED6616A10F77E52F21C3 /* SwiftSiriWaveformView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSiriWaveformView.swift; path = Pod/Classes/SwiftSiriWaveformView.swift; sourceTree = "<group>"; };
-		2DA8D6F520CE2E9A5E0C62B86FB4BB15 /* AKHighShelfParametricEqualizerFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKHighShelfParametricEqualizerFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKHighShelfParametricEqualizerFilterAudioUnit.h; sourceTree = "<group>"; };
-		2F24361821CD61D12236997905411363 /* AKBitCrusherAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKBitCrusherAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKBitCrusherAudioUnit.h; sourceTree = "<group>"; };
+		2BDDAD939B78D95B40D4CC39DB6AF051 /* AKPluckedStringAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPluckedStringAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKPluckedStringAudioUnit.h; sourceTree = "<group>"; };
+		2C82EF0D29A33A1C35CDF1861E2D0CB5 /* AKTremoloAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKTremoloAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKTremoloAudioUnit.h; sourceTree = "<group>"; };
+		2CE8028202802C5B9C6E4C8167559759 /* AKTanhDistortionAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKTanhDistortionAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKTanhDistortionAudioUnit.h; sourceTree = "<group>"; };
+		2E4369CEA7432A1A42285F1EB9A4BD30 /* AKToneFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKToneFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKToneFilterAudioUnit.h; sourceTree = "<group>"; };
+		2EBDC8E95BF4BECD98DBA184DBE28BB2 /* EZAudioDevice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioDevice.h; path = iOS/AudioKit.framework/Headers/EZAudioDevice.h; sourceTree = "<group>"; };
+		2EF2C8F3DCB1C5FE003FF78248637A2E /* Pods_FreqAlertsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FreqAlertsUITests.framework; path = "Pods-FreqAlertsUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FE6C9EA3ACC665145E6F71C611CF91C /* EZAudio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudio.h; path = iOS/AudioKit.framework/Headers/EZAudio.h; sourceTree = "<group>"; };
+		316E31C6C79776EC0CCBBD0DF1844902 /* AKClipperAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKClipperAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKClipperAudioUnit.h; sourceTree = "<group>"; };
 		31854A85A7CE3FD566D30656D1C385D0 /* Pods-FreqAlerts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FreqAlerts.debug.xcconfig"; sourceTree = "<group>"; };
-		32CA854005246D6113B20DA460190020 /* AKStringResonatorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKStringResonatorAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKStringResonatorAudioUnit.h; sourceTree = "<group>"; };
-		32DAE01F10869AFC03135ADB84CE7F9E /* EZAudioDisplayLink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioDisplayLink.h; path = iOS/AudioKit.framework/Headers/EZAudioDisplayLink.h; sourceTree = "<group>"; };
 		3370FC3183897804E37AE26DA86B12A3 /* Pods-FreqAlerts-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FreqAlerts-acknowledgements.plist"; sourceTree = "<group>"; };
-		3BAC3BA1AC424F509C52A012B136830D /* KDCircularProgress-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KDCircularProgress-umbrella.h"; sourceTree = "<group>"; };
+		34573E8B585709CD4429103FA8F5443A /* AKMetalBarAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKMetalBarAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKMetalBarAudioUnit.h; sourceTree = "<group>"; };
+		34C939D125655059A1560F78B3F5E222 /* AKOscillatorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKOscillatorAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKOscillatorAudioUnit.h; sourceTree = "<group>"; };
+		350AB2F9BA8D6A042A578BF64C6B185D /* AKVariableDelayAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKVariableDelayAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKVariableDelayAudioUnit.h; sourceTree = "<group>"; };
+		3B0AD9206B49A351D88D6757DDD19876 /* AKPhaseLockedVocoderAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPhaseLockedVocoderAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKPhaseLockedVocoderAudioUnit.h; sourceTree = "<group>"; };
 		3BF867ECDF6B2AA29CA0002E4E8D1180 /* Pods-FreqAlertsUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FreqAlertsUITests-dummy.m"; sourceTree = "<group>"; };
-		412D8611E58DA0CFA0E29B4257C7B579 /* AKDripAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKDripAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKDripAudioUnit.h; sourceTree = "<group>"; };
-		418CBD55478F06DE1E7DFD61FFB46D9A /* AKPitchShifterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPitchShifterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKPitchShifterAudioUnit.h; sourceTree = "<group>"; };
-		42B543193BFD0BF54E08868C47902A2F /* SwiftSiriWaveformView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftSiriWaveformView.framework; path = SwiftSiriWaveformView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		430EF381DAEB21AFD7B7EB176999E147 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4588A270B31AFA0FE0D9E7B13251DD79 /* EZPlot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZPlot.h; path = iOS/AudioKit.framework/Headers/EZPlot.h; sourceTree = "<group>"; };
-		46FFD90657D6A184903E90A62FF3233B /* AKOperationEffectAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKOperationEffectAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKOperationEffectAudioUnit.h; sourceTree = "<group>"; };
+		3E32F110DBB7670ACC21EA660BE595A7 /* AKEqualizerFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKEqualizerFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKEqualizerFilterAudioUnit.h; sourceTree = "<group>"; };
+		3FA93747CC8BE5F487B213734BC61323 /* AKMorphingOscillatorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKMorphingOscillatorAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKMorphingOscillatorAudioUnit.h; sourceTree = "<group>"; };
+		408A69B2BC6FB349565AD413F04A6829 /* AKStereoFieldLimiterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKStereoFieldLimiterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKStereoFieldLimiterAudioUnit.h; sourceTree = "<group>"; };
+		42B8C99371D545A482D6E1184ACC7F2D /* AKPhaseDistortionOscillatorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPhaseDistortionOscillatorAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKPhaseDistortionOscillatorAudioUnit.h; sourceTree = "<group>"; };
+		466D8DCED4B5A73EC21F83EEABECD72E /* AKBrownianNoiseAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKBrownianNoiseAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKBrownianNoiseAudioUnit.h; sourceTree = "<group>"; };
 		4AE217666491606867A9DC07E792D099 /* Pods-FreqAlertsUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FreqAlertsUITests-resources.sh"; sourceTree = "<group>"; };
-		4CE7179B257B24C8E7E12538C6E80EC4 /* AKAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKAudioUnit.h; sourceTree = "<group>"; };
-		4D45D086912A6EF3BE9AD688973A56A7 /* AKWhiteNoiseAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKWhiteNoiseAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKWhiteNoiseAudioUnit.h; sourceTree = "<group>"; };
-		5788C5BA32B2A05CA0E63348E7D1B878 /* AKKorgLowPassFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKKorgLowPassFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKKorgLowPassFilterAudioUnit.h; sourceTree = "<group>"; };
-		57F7A03B5F04928CD67D546BE8C92478 /* AudioKit-Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AudioKit-Swift.h"; path = "iOS/AudioKit.framework/Headers/AudioKit-Swift.h"; sourceTree = "<group>"; };
-		59F9BE23F59669CFF56ECD559E486D50 /* AKModalResonanceFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKModalResonanceFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKModalResonanceFilterAudioUnit.h; sourceTree = "<group>"; };
-		5A3DD8997CDD919BD024D4650378516F /* AKMorphingOscillatorBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKMorphingOscillatorBankAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKMorphingOscillatorBankAudioUnit.h; sourceTree = "<group>"; };
-		5B17DE4287A8D336FD9013A866EE3BEF /* AKMandolinAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKMandolinAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKMandolinAudioUnit.h; sourceTree = "<group>"; };
-		5CF7404E1FC9D9648DF2BA8120E1C1DD /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = iOS/AudioKit.framework; sourceTree = "<group>"; };
+		4F3614BC52707B3AC1E0D8482BA74E71 /* AKCostelloReverbAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKCostelloReverbAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKCostelloReverbAudioUnit.h; sourceTree = "<group>"; };
+		4FB0157927826A9B3E5CFB95405A2960 /* AKChowningReverbAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKChowningReverbAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKChowningReverbAudioUnit.h; sourceTree = "<group>"; };
+		5043F3D5C44ED4B6D5BBB246DA362BB9 /* AudioKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AudioKit.h; path = iOS/AudioKit.framework/Headers/AudioKit.h; sourceTree = "<group>"; };
+		51258601EF777B21D24B8AC4A537BA53 /* AKToneComplementFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKToneComplementFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKToneComplementFilterAudioUnit.h; sourceTree = "<group>"; };
+		52C8B30DB7C6EBD67264F794395CAE8F /* AKBoosterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKBoosterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKBoosterAudioUnit.h; sourceTree = "<group>"; };
+		54DB26A98683E1333C520483D47CEA5F /* AKPinkNoiseAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPinkNoiseAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKPinkNoiseAudioUnit.h; sourceTree = "<group>"; };
+		553BEB8CD27B1D4E679C84526654CC24 /* AKFormantFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFormantFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKFormantFilterAudioUnit.h; sourceTree = "<group>"; };
+		585F9D5A228BF468754223E0FE85CD5B /* AKAmplitudeTrackerAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKAmplitudeTrackerAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKAmplitudeTrackerAudioUnit.h; sourceTree = "<group>"; };
+		58F7331B6439F58A5148D8A92124F13A /* EZAudioFloatConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFloatConverter.h; path = iOS/AudioKit.framework/Headers/EZAudioFloatConverter.h; sourceTree = "<group>"; };
+		59E5A4E24447604AAB40BBB9A0E17EC0 /* AKSporthStack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKSporthStack.h; path = iOS/AudioKit.framework/Headers/AKSporthStack.h; sourceTree = "<group>"; };
+		5B521208E90E9274160E15E9E200E18B /* KDCircularProgress.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KDCircularProgress.modulemap; sourceTree = "<group>"; };
+		5BAEA5C0851F8CF8F9B4F5CE40DA9BF2 /* EZPlot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZPlot.h; path = iOS/AudioKit.framework/Headers/EZPlot.h; sourceTree = "<group>"; };
 		5E5A64FA1747C0CCF10B38B0FFF6D7F9 /* Pods-FreqAlertsTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FreqAlertsTests-dummy.m"; sourceTree = "<group>"; };
-		5EBA1B753118C1078151286E09E3FEB9 /* EZAudioFFT.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFFT.h; path = iOS/AudioKit.framework/Headers/EZAudioFFT.h; sourceTree = "<group>"; };
-		6243E54A4FBDAAE4B5B456A1E3AB582E /* AKFlatFrequencyResponseReverbAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFlatFrequencyResponseReverbAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKFlatFrequencyResponseReverbAudioUnit.h; sourceTree = "<group>"; };
-		63A213BA0B7744590D673246625117A0 /* AKTremoloAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKTremoloAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKTremoloAudioUnit.h; sourceTree = "<group>"; };
-		63CC3D8BD4FD55CFBCE24223EF035580 /* AKOfflineRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKOfflineRenderer.h; path = iOS/AudioKit.framework/Headers/AKOfflineRenderer.h; sourceTree = "<group>"; };
+		5E83AF54B6D147ACD03253BAC2F0386B /* EZOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZOutput.h; path = iOS/AudioKit.framework/Headers/EZOutput.h; sourceTree = "<group>"; };
+		5E8F1609F0595EED4090AA511FCCB393 /* AKKorgLowPassFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKKorgLowPassFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKKorgLowPassFilterAudioUnit.h; sourceTree = "<group>"; };
+		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		63947A5E15335789A3579742C98F4BEE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6478340052A7231B300293A321D6DAC3 /* AKOperationEffectAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKOperationEffectAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKOperationEffectAudioUnit.h; sourceTree = "<group>"; };
+		678936738D8A7EFC04123855800D4085 /* AKPhaserAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPhaserAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKPhaserAudioUnit.h; sourceTree = "<group>"; };
 		67A7F3ADB1C9F10A1FDDB4000BC44AB4 /* Pods-FreqAlertsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FreqAlertsTests.release.xcconfig"; sourceTree = "<group>"; };
-		686F88AA0E1B61C5BC1C8692B6200CB7 /* AKRolandTB303FilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKRolandTB303FilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKRolandTB303FilterAudioUnit.h; sourceTree = "<group>"; };
+		6891EB44D7A3478099EA2FDC8EC2A276 /* SwiftSiriWaveformView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSiriWaveformView-prefix.pch"; sourceTree = "<group>"; };
 		69B2F620982D123F736626E416C416A6 /* Pods-FreqAlertsUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FreqAlertsUITests-frameworks.sh"; sourceTree = "<group>"; };
-		6C9D6249F8EC6233A8EC5C415FEF2878 /* AKMetalBarAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKMetalBarAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKMetalBarAudioUnit.h; sourceTree = "<group>"; };
-		6ECD3A3D967E14235EB1A54F06302BC6 /* AKHighPassButterworthFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKHighPassButterworthFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKHighPassButterworthFilterAudioUnit.h; sourceTree = "<group>"; };
 		702BD84D58425A1F7315BDB8D3AD9554 /* Pods-FreqAlerts-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FreqAlerts-umbrella.h"; sourceTree = "<group>"; };
-		725D8775768A28AAB6270C466489E44F /* AKOscillatorBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKOscillatorBankAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKOscillatorBankAudioUnit.h; sourceTree = "<group>"; };
-		75D4C0FADC7FE18D7536FB51A0A76296 /* AKFluteAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFluteAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKFluteAudioUnit.h; sourceTree = "<group>"; };
-		799B676F4B7C3B8CB82436836BEAFF21 /* AKZitaReverbAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKZitaReverbAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKZitaReverbAudioUnit.h; sourceTree = "<group>"; };
+		74BE5CBF13A53F2FBFA23D2950C686CC /* EZAudioUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioUtilities.h; path = iOS/AudioKit.framework/Headers/EZAudioUtilities.h; sourceTree = "<group>"; };
+		78D763A315ABF08F167FC3021340EF9F /* EZAudioFFT.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFFT.h; path = iOS/AudioKit.framework/Headers/EZAudioFFT.h; sourceTree = "<group>"; };
+		798F84114364F67128A6FB52C28A5362 /* AKBitCrusherAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKBitCrusherAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKBitCrusherAudioUnit.h; sourceTree = "<group>"; };
+		79F95544D5D71717B9AB8AC5870120F4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A8914FE88BD5BC479E621111BE6DD23 /* Pods-FreqAlerts-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FreqAlerts-resources.sh"; sourceTree = "<group>"; };
-		7B16F8607DDC4C47BE9A76D27A11C9B6 /* SwiftSiriWaveformView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSiriWaveformView-prefix.pch"; sourceTree = "<group>"; };
-		7C8966C007E5966E55A693424BB98860 /* Pods_FreqAlertsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FreqAlertsUITests.framework; path = "Pods-FreqAlertsUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E25D812A1AF04E13A33E8106476E4B8 /* EZAudioPlot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioPlot.h; path = iOS/AudioKit.framework/Headers/EZAudioPlot.h; sourceTree = "<group>"; };
-		821D7D3EFDB6F30C4430D7C826D0C8D8 /* AKBrownianNoiseAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKBrownianNoiseAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKBrownianNoiseAudioUnit.h; sourceTree = "<group>"; };
-		845E09D7301BDFD585D5261DA55BC080 /* AKToneFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKToneFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKToneFilterAudioUnit.h; sourceTree = "<group>"; };
-		849541DCC3972083E6007880BF0B7A54 /* EZOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZOutput.h; path = iOS/AudioKit.framework/Headers/EZOutput.h; sourceTree = "<group>"; };
-		87ED002B344CD1ED68744D00422BC044 /* AKBandPassButterworthFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKBandPassButterworthFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKBandPassButterworthFilterAudioUnit.h; sourceTree = "<group>"; };
-		883FF2962067A058EA958816A4D123A7 /* Pods_FreqAlerts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FreqAlerts.framework; path = "Pods-FreqAlerts.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		88EAF07493084E996F558ACED9E7B7A2 /* AKFrequencyTrackerAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFrequencyTrackerAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKFrequencyTrackerAudioUnit.h; sourceTree = "<group>"; };
+		7D8BB7ABF9E63DE545477B9CD95DD48B /* AudioKit-Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AudioKit-Swift.h"; path = "iOS/AudioKit.framework/Headers/AudioKit-Swift.h"; sourceTree = "<group>"; };
+		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		7FF1B08193992392776FE87582071182 /* EZAudioPlot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioPlot.h; path = iOS/AudioKit.framework/Headers/EZAudioPlot.h; sourceTree = "<group>"; };
+		813272656FC73B1B7E8ADF75F4D23BE0 /* AKOfflineRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKOfflineRenderer.h; path = iOS/AudioKit.framework/Headers/AKOfflineRenderer.h; sourceTree = "<group>"; };
+		813EF33CD77F4F3E43BD262922B0B797 /* AKZitaReverbAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKZitaReverbAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKZitaReverbAudioUnit.h; sourceTree = "<group>"; };
+		863D03B36DEEDB6867694BE39631A5FA /* AKFMOscillatorBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFMOscillatorBankAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKFMOscillatorBankAudioUnit.h; sourceTree = "<group>"; };
+		87E388DBA25F93EE94E9874FD9259F88 /* SwiftSiriWaveformView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSiriWaveformView-dummy.m"; sourceTree = "<group>"; };
+		88DE28FC9D52CF0FE7392BE8ADBB25BB /* EZAudioPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioPlayer.h; path = iOS/AudioKit.framework/Headers/EZAudioPlayer.h; sourceTree = "<group>"; };
 		8A016503E0BF609A61780838323C9AE7 /* Pods-FreqAlertsTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FreqAlertsTests.modulemap"; sourceTree = "<group>"; };
-		8AE93643532811FBAA19970BBAFB9CB4 /* AudioKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AudioKit.h; path = iOS/AudioKit.framework/Headers/AudioKit.h; sourceTree = "<group>"; };
-		8B758E3EC160780116066CAB335265C0 /* AKPWMOscillatorBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPWMOscillatorBankAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKPWMOscillatorBankAudioUnit.h; sourceTree = "<group>"; };
-		8E929FE5C20FD2831F8868617C82B9AD /* AKChowningReverbAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKChowningReverbAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKChowningReverbAudioUnit.h; sourceTree = "<group>"; };
+		8BF64204E94EF9463179DFB7E07C6693 /* AKAutoWahAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKAutoWahAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKAutoWahAudioUnit.h; sourceTree = "<group>"; };
+		8D0727442CF050805343BFEAF9BF5A85 /* AKRhodesPianoAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKRhodesPianoAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKRhodesPianoAudioUnit.h; sourceTree = "<group>"; };
+		8D5A3DD87C480C8CD80753C1DEBCE2A1 /* AKDynamicRangeCompressorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKDynamicRangeCompressorAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKDynamicRangeCompressorAudioUnit.h; sourceTree = "<group>"; };
+		8DDC7E52D6F639AF45339C2A06127CE2 /* AKFrequencyTrackerAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFrequencyTrackerAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKFrequencyTrackerAudioUnit.h; sourceTree = "<group>"; };
+		8E69E3262C1A39CE1CDA7B2F3831B4B8 /* AKTubularBellsAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKTubularBellsAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKTubularBellsAudioUnit.h; sourceTree = "<group>"; };
+		8F2024BDDDD1E4CE5043120ED88BE637 /* AKShakerAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKShakerAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKShakerAudioUnit.h; sourceTree = "<group>"; };
 		8F27119D4D4B07A39ACCB81AF5CF9118 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90E995B5E6030AE62A5B85F47CA32E8F /* AKRolandTB303FilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKRolandTB303FilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKRolandTB303FilterAudioUnit.h; sourceTree = "<group>"; };
 		919F45CD43E8C13C69D119B58B55C917 /* Pods-FreqAlerts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FreqAlerts.release.xcconfig"; sourceTree = "<group>"; };
-		9251F3BAD4B6E1C529F67A962F37FF41 /* SwiftSiriWaveformView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSiriWaveformView-dummy.m"; sourceTree = "<group>"; };
+		92878074F81139587A7ADACC71CBE1D6 /* AKFluteAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFluteAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKFluteAudioUnit.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9607615123E582BF87C5A0361B1E1AB7 /* EZAudio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudio.h; path = iOS/AudioKit.framework/Headers/EZAudio.h; sourceTree = "<group>"; };
+		93F959A0A876313533A781CB85DC33B5 /* Hex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Hex.framework; path = Hex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9684FA6A673BE45471EE39D3E16BE46D /* AKMoogLadderAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKMoogLadderAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKMoogLadderAudioUnit.h; sourceTree = "<group>"; };
 		96926E33BD5EA4DE2ADD39093823B040 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		992020C5A300692CBF33ADC4CCE2369A /* Pods-FreqAlertsUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FreqAlertsUITests-umbrella.h"; sourceTree = "<group>"; };
-		9CD2940C98F0F7D190DB66DC01931E2A /* AKPluckedStringAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPluckedStringAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKPluckedStringAudioUnit.h; sourceTree = "<group>"; };
+		9BE58503AE8191182368BCBA04ADF1E4 /* AKPWMOscillatorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPWMOscillatorAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKPWMOscillatorAudioUnit.h; sourceTree = "<group>"; };
 		9CE13288FC333231C569EA0623C9702C /* Pods-FreqAlertsUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FreqAlertsUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9D024D6DE8360C09CDD17C10E812B1B4 /* Pods-FreqAlertsTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FreqAlertsTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		9D741338D602F45A858613D3F82E20BE /* AKOperationGeneratorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKOperationGeneratorAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKOperationGeneratorAudioUnit.h; sourceTree = "<group>"; };
-		A2A69CF014D33D6615453A9B98D46CE5 /* AKLowPassButterworthFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKLowPassButterworthFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKLowPassButterworthFilterAudioUnit.h; sourceTree = "<group>"; };
-		A31BC078B797DB8CC6B167CB370540CB /* AKFMOscillatorBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFMOscillatorBankAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKFMOscillatorBankAudioUnit.h; sourceTree = "<group>"; };
-		A40D357EC8E2D35CC5189CB4E94E17BA /* AKResonantFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKResonantFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKResonantFilterAudioUnit.h; sourceTree = "<group>"; };
-		A4A1F8C2877843D9CC24CD6872DFB214 /* AKAmplitudeEnvelopeAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKAmplitudeEnvelopeAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKAmplitudeEnvelopeAudioUnit.h; sourceTree = "<group>"; };
-		A63DAB21EFEA72B2C300B876FB9578E8 /* EZMicrophone.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZMicrophone.h; path = iOS/AudioKit.framework/Headers/EZMicrophone.h; sourceTree = "<group>"; };
-		A70821E88DD10967058BC4F2896CBF98 /* AKBoosterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKBoosterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKBoosterAudioUnit.h; sourceTree = "<group>"; };
+		9DBA64D3EE21C7732CCE78B55F08F4D4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EAD5CC91C810B19E55C29A6EDCCB3A1 /* AKPWMOscillatorBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPWMOscillatorBankAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKPWMOscillatorBankAudioUnit.h; sourceTree = "<group>"; };
+		A10894C5F77854085F0B957A3BB0C8A6 /* EZAudioFileMarker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFileMarker.h; path = iOS/AudioKit.framework/Headers/EZAudioFileMarker.h; sourceTree = "<group>"; };
+		A176A2F83F8C8F2A80DD17D6A876AB15 /* AKPitchShifterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPitchShifterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKPitchShifterAudioUnit.h; sourceTree = "<group>"; };
+		A4B9A8FCCD01B86C205611301EF3145A /* AKResonantFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKResonantFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKResonantFilterAudioUnit.h; sourceTree = "<group>"; };
+		A4F919755FC37C3CB86BEBF639C76E78 /* KDCircularProgress-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KDCircularProgress-dummy.m"; sourceTree = "<group>"; };
+		A653DEE84AB5025F706ADA6DDE10C841 /* AKFMOscillatorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFMOscillatorAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKFMOscillatorAudioUnit.h; sourceTree = "<group>"; };
+		A68B43B27350A104510D51F912FE2B2E /* AKHighPassButterworthFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKHighPassButterworthFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKHighPassButterworthFilterAudioUnit.h; sourceTree = "<group>"; };
+		A70EBD3DC9F317474B09CBD42E761D2A /* Hex-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Hex-umbrella.h"; sourceTree = "<group>"; };
+		A731C458D1CE110C92E73430E6D1E85C /* AKPannerAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPannerAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKPannerAudioUnit.h; sourceTree = "<group>"; };
 		A80EFFE27A2CC257CB106F5241D68832 /* Pods-FreqAlertsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FreqAlertsUITests.release.xcconfig"; sourceTree = "<group>"; };
-		A8DBED51D0AEFA7327CABA17C4DD5575 /* AKStereoFieldLimiterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKStereoFieldLimiterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKStereoFieldLimiterAudioUnit.h; sourceTree = "<group>"; };
-		AB715EBB4D389D556BA3C377C683BCEE /* AKPhaserAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPhaserAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKPhaserAudioUnit.h; sourceTree = "<group>"; };
-		ACEB07B2CE42BD06B87757E33169D1CC /* AKClarinetAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKClarinetAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKClarinetAudioUnit.h; sourceTree = "<group>"; };
-		AE73969D4A34F190F3034CD9D93A7519 /* AKBandRejectButterworthFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKBandRejectButterworthFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKBandRejectButterworthFilterAudioUnit.h; sourceTree = "<group>"; };
-		B2152F2CDB52F799D80E2723FF512FCC /* AKTanhDistortionAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKTanhDistortionAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKTanhDistortionAudioUnit.h; sourceTree = "<group>"; };
-		B35AC5E243C0939D349D5C3464790ABB /* AKPhaseLockedVocoderAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPhaseLockedVocoderAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKPhaseLockedVocoderAudioUnit.h; sourceTree = "<group>"; };
-		B3982B7883E11ABF9F3F1D6639AEC5C5 /* EZAudioPlotGL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioPlotGL.h; path = iOS/AudioKit.framework/Headers/EZAudioPlotGL.h; sourceTree = "<group>"; };
-		B8870130C6746471B1CAB297BA45E73B /* AKRhodesPianoAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKRhodesPianoAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKRhodesPianoAudioUnit.h; sourceTree = "<group>"; };
+		A87DF5C4DBD69D4B8B2B89F0AB914E3C /* AKPeakingParametricEqualizerFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPeakingParametricEqualizerFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKPeakingParametricEqualizerFilterAudioUnit.h; sourceTree = "<group>"; };
+		AC51719A50B3272EC3F0627DC98CACB0 /* TPCircularBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPCircularBuffer.h; path = iOS/AudioKit.framework/Headers/TPCircularBuffer.h; sourceTree = "<group>"; };
+		AC576B2EBCDD0BF8548922FFF26B9F39 /* AKAmplitudeEnvelopeAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKAmplitudeEnvelopeAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKAmplitudeEnvelopeAudioUnit.h; sourceTree = "<group>"; };
+		ADF5DB6DB7B0269F9ECD1F1DA3BCB7E3 /* SwiftSiriWaveformView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftSiriWaveformView.framework; path = SwiftSiriWaveformView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B08F67AF986F350C6A809B379FBC4E21 /* Hex-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Hex-prefix.pch"; sourceTree = "<group>"; };
+		B475D56272D12508879A73353E9A5C51 /* EZAudioDisplayLink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioDisplayLink.h; path = iOS/AudioKit.framework/Headers/EZAudioDisplayLink.h; sourceTree = "<group>"; };
+		B6ACF443121F3B3F7B1DF9C97DEDA5D8 /* KDCircularProgress.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KDCircularProgress.xcconfig; sourceTree = "<group>"; };
+		B84725609C1F9CB34CBAF92F0E434F9A /* AKMandolinAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKMandolinAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKMandolinAudioUnit.h; sourceTree = "<group>"; };
 		BAE851E17CB1940428BEBD0103EFAF32 /* Pods-FreqAlertsTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FreqAlertsTests-resources.sh"; sourceTree = "<group>"; };
-		BEBB1CC18AFCA14187EC18161B11BEC7 /* AKDynamicRangeCompressorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKDynamicRangeCompressorAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKDynamicRangeCompressorAudioUnit.h; sourceTree = "<group>"; };
-		C0C369785F4086F357601151786996D8 /* KDCircularProgress-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KDCircularProgress-prefix.pch"; sourceTree = "<group>"; };
-		C312629955868E0792E4F8CD29275B66 /* SwiftSiriWaveformView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftSiriWaveformView.modulemap; sourceTree = "<group>"; };
-		C60F5655A20A4C82A267D53C7018D6F8 /* AKCostelloReverbAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKCostelloReverbAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKCostelloReverbAudioUnit.h; sourceTree = "<group>"; };
+		BB2A86A733976687F673ABBA9370C7BC /* AKWhiteNoiseAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKWhiteNoiseAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKWhiteNoiseAudioUnit.h; sourceTree = "<group>"; };
+		C2214DD4A5F28F68EFF9164E7F0C1D59 /* AKBandPassButterworthFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKBandPassButterworthFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKBandPassButterworthFilterAudioUnit.h; sourceTree = "<group>"; };
+		C5DF6850D4E859351BC79BF821638E9B /* AKDCBlockAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKDCBlockAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKDCBlockAudioUnit.h; sourceTree = "<group>"; };
+		C6665DB783A55A634E828526F63AD6AA /* SwiftSiriWaveformView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftSiriWaveformView.modulemap; sourceTree = "<group>"; };
 		C6EE11DAE3B7C2CD8130CD84A7CB8129 /* Pods-FreqAlertsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FreqAlertsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C7D06440EFEB45BFACE59F0884048505 /* Pods-FreqAlertsTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FreqAlertsTests-frameworks.sh"; sourceTree = "<group>"; };
+		C8273EEC34856CB0DEEA168089B89CAC /* AKLowShelfParametricEqualizerFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKLowShelfParametricEqualizerFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKLowShelfParametricEqualizerFilterAudioUnit.h; sourceTree = "<group>"; };
 		C82EBEA89C28CBD7EA429F8CC8807115 /* Pods-FreqAlertsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FreqAlertsUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		C9263850B6A53842DBB1E80F630F6739 /* KDCircularProgress.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KDCircularProgress.modulemap; sourceTree = "<group>"; };
-		CA209111C9102539724A9111D5F15CD7 /* AKThreePoleLowpassFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKThreePoleLowpassFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKThreePoleLowpassFilterAudioUnit.h; sourceTree = "<group>"; };
-		CA3159398BDBD1650A59DA89C345873B /* AKBalancerAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKBalancerAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKBalancerAudioUnit.h; sourceTree = "<group>"; };
-		CA73305970ED9E5FFF2B5DB15C0A84E7 /* EZAudioDevice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioDevice.h; path = iOS/AudioKit.framework/Headers/EZAudioDevice.h; sourceTree = "<group>"; };
-		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D10759CA02BF1A1567D165564DD765EB /* Pods_FreqAlertsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FreqAlertsTests.framework; path = "Pods-FreqAlertsTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D555BFE5E424A44410FEDFFDFB94FC70 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D6A06F2504908BCC375B8E9792D6EE47 /* EZAudioFloatData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFloatData.h; path = iOS/AudioKit.framework/Headers/EZAudioFloatData.h; sourceTree = "<group>"; };
-		D77D24277EAFA1B7A451BDACF6A8EB13 /* AKPWMOscillatorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPWMOscillatorAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKPWMOscillatorAudioUnit.h; sourceTree = "<group>"; };
-		D8EF686A159DD9062E816FC449A351D2 /* AKVariableDelayAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKVariableDelayAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKVariableDelayAudioUnit.h; sourceTree = "<group>"; };
-		D9792BDC69FB9CA64D9A287A5EA77767 /* AKOscillatorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKOscillatorAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKOscillatorAudioUnit.h; sourceTree = "<group>"; };
-		DAF0DA107E77D3D2EE683C6721DE1FFF /* AKAmplitudeTrackerAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKAmplitudeTrackerAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKAmplitudeTrackerAudioUnit.h; sourceTree = "<group>"; };
-		DAFB8E0F9F337A0BD791EF2A89D86D9B /* AKLowShelfParametricEqualizerFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKLowShelfParametricEqualizerFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKLowShelfParametricEqualizerFilterAudioUnit.h; sourceTree = "<group>"; };
+		D623AB4E760170203C213454A1FC9C84 /* KDCircularProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KDCircularProgress.framework; path = KDCircularProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9B3A0D8D85D9D1F8EFB81A21F9A55E1 /* EZMicrophone.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZMicrophone.h; path = iOS/AudioKit.framework/Headers/EZMicrophone.h; sourceTree = "<group>"; };
 		DB9E1ADE1E81FE78693CC2E2E7D57DF1 /* Pods-FreqAlertsUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FreqAlertsUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DCA48ED294D469A4A091C654D50C6F72 /* EZAudioFileMarker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFileMarker.h; path = iOS/AudioKit.framework/Headers/EZAudioFileMarker.h; sourceTree = "<group>"; };
-		DCF3D6F8069F693EF4658A8065B8CD34 /* KDCircularProgress-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KDCircularProgress-dummy.m"; sourceTree = "<group>"; };
-		E10C861236AB876B670816D4FBF2661C /* AKPinkNoiseAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPinkNoiseAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKPinkNoiseAudioUnit.h; sourceTree = "<group>"; };
-		E21A02BB12B29A902B7A22582DEDA110 /* EZAudioFloatConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFloatConverter.h; path = iOS/AudioKit.framework/Headers/EZAudioFloatConverter.h; sourceTree = "<group>"; };
-		E38061A0F88B76FFFFCD86425FE5E512 /* TPCircularBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPCircularBuffer.h; path = iOS/AudioKit.framework/Headers/TPCircularBuffer.h; sourceTree = "<group>"; };
-		E46258779825381E5A6241826554E005 /* KDCircularProgress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KDCircularProgress.swift; path = KDCircularProgress/KDCircularProgress.swift; sourceTree = "<group>"; };
-		E59318AAFB05B179561A185FC9DBE084 /* AKPannerAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPannerAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKPannerAudioUnit.h; sourceTree = "<group>"; };
+		DCA8764E0FF367BB9877B63B43B868A8 /* AKConvolutionAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKConvolutionAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKConvolutionAudioUnit.h; sourceTree = "<group>"; };
+		DF0B6053A145C08F87E81F67BE0E743C /* AKFlatFrequencyResponseReverbAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFlatFrequencyResponseReverbAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKFlatFrequencyResponseReverbAudioUnit.h; sourceTree = "<group>"; };
+		DF5DE1092E007CFE67FE2CFCCDEDF346 /* AKAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKAudioUnit.h; sourceTree = "<group>"; };
+		E03242FCDE39389014EE5828EF88B8C9 /* AKThreePoleLowpassFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKThreePoleLowpassFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKThreePoleLowpassFilterAudioUnit.h; sourceTree = "<group>"; };
+		E39B3E32357EADB9017131355A793A7C /* AKTesterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKTesterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKTesterAudioUnit.h; sourceTree = "<group>"; };
+		E53120047C39E4110117EDCBD1E768CC /* SwiftSiriWaveformView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSiriWaveformView.swift; path = Pod/Classes/SwiftSiriWaveformView.swift; sourceTree = "<group>"; };
 		E5B5DACB176DFFFE9B069BC47E68DD3F /* Pods-FreqAlertsTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FreqAlertsTests-umbrella.h"; sourceTree = "<group>"; };
-		E76706D63B66E6492968E4278A98FED5 /* AKTesterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKTesterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKTesterAudioUnit.h; sourceTree = "<group>"; };
-		E813E98DF5FCFBD8AB238F1BB0B284A6 /* AKSporthStack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKSporthStack.h; path = iOS/AudioKit.framework/Headers/AKSporthStack.h; sourceTree = "<group>"; };
+		E8088CC2D5929AD37DD0249C111332F8 /* Pods_FreqAlerts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FreqAlerts.framework; path = "Pods-FreqAlerts.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA733B443F94F48183094C40CBC4D9D0 /* Pods-FreqAlerts-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FreqAlerts-dummy.m"; sourceTree = "<group>"; };
-		EB3FFA30736C3DDFFBAB36BE94EEEC4F /* AKCombFilterReverbAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKCombFilterReverbAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKCombFilterReverbAudioUnit.h; sourceTree = "<group>"; };
-		EB5D19D92DB1CC5F045694E73A5D8481 /* AKPeakingParametricEqualizerFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPeakingParametricEqualizerFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKPeakingParametricEqualizerFilterAudioUnit.h; sourceTree = "<group>"; };
-		ED64D23EDA0A0AD08A57E8AE1A3F8C53 /* EZAudioFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFile.h; path = iOS/AudioKit.framework/Headers/EZAudioFile.h; sourceTree = "<group>"; };
-		EE451BAF09E5A5E9F60AC1C0073C35E6 /* AKFormantFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFormantFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKFormantFilterAudioUnit.h; sourceTree = "<group>"; };
-		EF94C7741EFFA64A9B57D6C3C19014F8 /* AKMoogLadderAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKMoogLadderAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKMoogLadderAudioUnit.h; sourceTree = "<group>"; };
-		F1B3893FB12044A4DE1C811174D74963 /* EZAudioUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioUtilities.h; path = iOS/AudioKit.framework/Headers/EZAudioUtilities.h; sourceTree = "<group>"; };
-		F3462D8A515CD624DC17C1B9574970DB /* AKTubularBellsAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKTubularBellsAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKTubularBellsAudioUnit.h; sourceTree = "<group>"; };
-		F4A91F495C7480DCAAD8B5F6A757379A /* AKEqualizerFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKEqualizerFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKEqualizerFilterAudioUnit.h; sourceTree = "<group>"; };
-		F5C731D61CB2625F1DD844110B77B144 /* AKAutoWahAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKAutoWahAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKAutoWahAudioUnit.h; sourceTree = "<group>"; };
-		FA7FC4343E99E4D445AFCC12EC7C68A2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE9448E207C9C75BE43BA59C43D20178 /* AKDripAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKDripAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKDripAudioUnit.h; sourceTree = "<group>"; };
+		EF3E4CAB9F63040D9D7903E618C6C2B6 /* AKMorphingOscillatorBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKMorphingOscillatorBankAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKMorphingOscillatorBankAudioUnit.h; sourceTree = "<group>"; };
+		EFD7D658D6908B32F3B6B91D8BA82C37 /* EZRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRecorder.h; path = iOS/AudioKit.framework/Headers/EZRecorder.h; sourceTree = "<group>"; };
+		F1D824785349D5580F91DE2557AEFB74 /* AKPhaseDistortionOscillatorBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPhaseDistortionOscillatorBankAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKPhaseDistortionOscillatorBankAudioUnit.h; sourceTree = "<group>"; };
+		F2EF8225AB544EEBF665DBDA9363B940 /* AKStringResonatorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKStringResonatorAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKStringResonatorAudioUnit.h; sourceTree = "<group>"; };
+		F8B20F4A5F10A65AA3D21659572F27BF /* AKBandRejectButterworthFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKBandRejectButterworthFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKBandRejectButterworthFilterAudioUnit.h; sourceTree = "<group>"; };
 		FABFD828A76EC692FC8536B71B34027C /* Pods-FreqAlerts.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FreqAlerts.modulemap"; sourceTree = "<group>"; };
-		FCC35DAACB65FEA0C8795CD428822FEE /* AKConvolutionAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKConvolutionAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKConvolutionAudioUnit.h; sourceTree = "<group>"; };
-		FE48E30CA66098CAA4926B9CEE9662F1 /* KDCircularProgress.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KDCircularProgress.xcconfig; sourceTree = "<group>"; };
+		FCB0B45B60BA4DC91823967E56251252 /* AKOscillatorBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKOscillatorBankAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKOscillatorBankAudioUnit.h; sourceTree = "<group>"; };
+		FD142DCAFF5E9710751762C9869A79F6 /* AKCombFilterReverbAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKCombFilterReverbAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKCombFilterReverbAudioUnit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		029FD9EF106A399C7A471FB0C7C0305C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B01B1FE5C1A996F2D7E17C12CF11BE38 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D490953AA60714328D1621AF965F8ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E932D2CF7A7C1BAB61CB3EDC07A3F58 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		444D49E17C8519E3ED22669F891F34C2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				93F4AEA373840E69F9055F8F556A97E7 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		67A49A6D049ACA08FA0E6BA5A49581DF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2E58C039649469CACBFB48BC38FAE1CE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +241,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BE49DE2C8148A0CE5474ECD6C5482DC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F1EC07C8DD38DCC0D2CB0F7939B7ADD /* Foundation.framework in Frameworks */,
+				C7CCE2AE10716915B1934CAB4FB2AAE2 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E0FC9D130C897AB3A235F54886BC4A26 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -220,113 +258,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F0F4D00C14FEBF579DC0B12494EC00C1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3ED4B723215D64733033771209484E66 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0785EFE689C8B43C236166D891A2D63C /* AudioKit */ = {
+		016AA6697B66BA134BAC7F88F28FBD0C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A4A1F8C2877843D9CC24CD6872DFB214 /* AKAmplitudeEnvelopeAudioUnit.h */,
-				DAF0DA107E77D3D2EE683C6721DE1FFF /* AKAmplitudeTrackerAudioUnit.h */,
-				4CE7179B257B24C8E7E12538C6E80EC4 /* AKAudioUnit.h */,
-				F5C731D61CB2625F1DD844110B77B144 /* AKAutoWahAudioUnit.h */,
-				CA3159398BDBD1650A59DA89C345873B /* AKBalancerAudioUnit.h */,
-				87ED002B344CD1ED68744D00422BC044 /* AKBandPassButterworthFilterAudioUnit.h */,
-				AE73969D4A34F190F3034CD9D93A7519 /* AKBandRejectButterworthFilterAudioUnit.h */,
-				2F24361821CD61D12236997905411363 /* AKBitCrusherAudioUnit.h */,
-				A70821E88DD10967058BC4F2896CBF98 /* AKBoosterAudioUnit.h */,
-				821D7D3EFDB6F30C4430D7C826D0C8D8 /* AKBrownianNoiseAudioUnit.h */,
-				8E929FE5C20FD2831F8868617C82B9AD /* AKChowningReverbAudioUnit.h */,
-				ACEB07B2CE42BD06B87757E33169D1CC /* AKClarinetAudioUnit.h */,
-				00CDE960E66F76AEEEA3211A0AA3DC12 /* AKClipperAudioUnit.h */,
-				EB3FFA30736C3DDFFBAB36BE94EEEC4F /* AKCombFilterReverbAudioUnit.h */,
-				FCC35DAACB65FEA0C8795CD428822FEE /* AKConvolutionAudioUnit.h */,
-				C60F5655A20A4C82A267D53C7018D6F8 /* AKCostelloReverbAudioUnit.h */,
-				187EC00880BAB60892D6C6874184B447 /* AKDCBlockAudioUnit.h */,
-				412D8611E58DA0CFA0E29B4257C7B579 /* AKDripAudioUnit.h */,
-				BEBB1CC18AFCA14187EC18161B11BEC7 /* AKDynamicRangeCompressorAudioUnit.h */,
-				F4A91F495C7480DCAAD8B5F6A757379A /* AKEqualizerFilterAudioUnit.h */,
-				6243E54A4FBDAAE4B5B456A1E3AB582E /* AKFlatFrequencyResponseReverbAudioUnit.h */,
-				75D4C0FADC7FE18D7536FB51A0A76296 /* AKFluteAudioUnit.h */,
-				0CCAE3AB19EC913F55A629F3D868AEF0 /* AKFMOscillatorAudioUnit.h */,
-				A31BC078B797DB8CC6B167CB370540CB /* AKFMOscillatorBankAudioUnit.h */,
-				EE451BAF09E5A5E9F60AC1C0073C35E6 /* AKFormantFilterAudioUnit.h */,
-				88EAF07493084E996F558ACED9E7B7A2 /* AKFrequencyTrackerAudioUnit.h */,
-				6ECD3A3D967E14235EB1A54F06302BC6 /* AKHighPassButterworthFilterAudioUnit.h */,
-				2DA8D6F520CE2E9A5E0C62B86FB4BB15 /* AKHighShelfParametricEqualizerFilterAudioUnit.h */,
-				5788C5BA32B2A05CA0E63348E7D1B878 /* AKKorgLowPassFilterAudioUnit.h */,
-				A2A69CF014D33D6615453A9B98D46CE5 /* AKLowPassButterworthFilterAudioUnit.h */,
-				DAFB8E0F9F337A0BD791EF2A89D86D9B /* AKLowShelfParametricEqualizerFilterAudioUnit.h */,
-				5B17DE4287A8D336FD9013A866EE3BEF /* AKMandolinAudioUnit.h */,
-				6C9D6249F8EC6233A8EC5C415FEF2878 /* AKMetalBarAudioUnit.h */,
-				59F9BE23F59669CFF56ECD559E486D50 /* AKModalResonanceFilterAudioUnit.h */,
-				EF94C7741EFFA64A9B57D6C3C19014F8 /* AKMoogLadderAudioUnit.h */,
-				15AA7432843A76ED28E6CB2DD427E00F /* AKMorphingOscillatorAudioUnit.h */,
-				5A3DD8997CDD919BD024D4650378516F /* AKMorphingOscillatorBankAudioUnit.h */,
-				63CC3D8BD4FD55CFBCE24223EF035580 /* AKOfflineRenderer.h */,
-				46FFD90657D6A184903E90A62FF3233B /* AKOperationEffectAudioUnit.h */,
-				9D741338D602F45A858613D3F82E20BE /* AKOperationGeneratorAudioUnit.h */,
-				D9792BDC69FB9CA64D9A287A5EA77767 /* AKOscillatorAudioUnit.h */,
-				725D8775768A28AAB6270C466489E44F /* AKOscillatorBankAudioUnit.h */,
-				E59318AAFB05B179561A185FC9DBE084 /* AKPannerAudioUnit.h */,
-				EB5D19D92DB1CC5F045694E73A5D8481 /* AKPeakingParametricEqualizerFilterAudioUnit.h */,
-				0EEE506F5E99958AB25B3C5DA4729B58 /* AKPhaseDistortionOscillatorAudioUnit.h */,
-				0096A854979E340768FDDD5F36F4045B /* AKPhaseDistortionOscillatorBankAudioUnit.h */,
-				B35AC5E243C0939D349D5C3464790ABB /* AKPhaseLockedVocoderAudioUnit.h */,
-				AB715EBB4D389D556BA3C377C683BCEE /* AKPhaserAudioUnit.h */,
-				E10C861236AB876B670816D4FBF2661C /* AKPinkNoiseAudioUnit.h */,
-				418CBD55478F06DE1E7DFD61FFB46D9A /* AKPitchShifterAudioUnit.h */,
-				9CD2940C98F0F7D190DB66DC01931E2A /* AKPluckedStringAudioUnit.h */,
-				D77D24277EAFA1B7A451BDACF6A8EB13 /* AKPWMOscillatorAudioUnit.h */,
-				8B758E3EC160780116066CAB335265C0 /* AKPWMOscillatorBankAudioUnit.h */,
-				A40D357EC8E2D35CC5189CB4E94E17BA /* AKResonantFilterAudioUnit.h */,
-				B8870130C6746471B1CAB297BA45E73B /* AKRhodesPianoAudioUnit.h */,
-				686F88AA0E1B61C5BC1C8692B6200CB7 /* AKRolandTB303FilterAudioUnit.h */,
-				0DD53F0255945A8EA8A4EEB3FE83853A /* AKShakerAudioUnit.h */,
-				E813E98DF5FCFBD8AB238F1BB0B284A6 /* AKSporthStack.h */,
-				A8DBED51D0AEFA7327CABA17C4DD5575 /* AKStereoFieldLimiterAudioUnit.h */,
-				32CA854005246D6113B20DA460190020 /* AKStringResonatorAudioUnit.h */,
-				B2152F2CDB52F799D80E2723FF512FCC /* AKTanhDistortionAudioUnit.h */,
-				E76706D63B66E6492968E4278A98FED5 /* AKTesterAudioUnit.h */,
-				CA209111C9102539724A9111D5F15CD7 /* AKThreePoleLowpassFilterAudioUnit.h */,
-				1196776833311E69CBB03DB7A2B3D18C /* AKToneComplementFilterAudioUnit.h */,
-				845E09D7301BDFD585D5261DA55BC080 /* AKToneFilterAudioUnit.h */,
-				63A213BA0B7744590D673246625117A0 /* AKTremoloAudioUnit.h */,
-				F3462D8A515CD624DC17C1B9574970DB /* AKTubularBellsAudioUnit.h */,
-				D8EF686A159DD9062E816FC449A351D2 /* AKVariableDelayAudioUnit.h */,
-				4D45D086912A6EF3BE9AD688973A56A7 /* AKWhiteNoiseAudioUnit.h */,
-				799B676F4B7C3B8CB82436836BEAFF21 /* AKZitaReverbAudioUnit.h */,
-				8AE93643532811FBAA19970BBAFB9CB4 /* AudioKit.h */,
-				57F7A03B5F04928CD67D546BE8C92478 /* AudioKit-Swift.h */,
-				9607615123E582BF87C5A0361B1E1AB7 /* EZAudio.h */,
-				CA73305970ED9E5FFF2B5DB15C0A84E7 /* EZAudioDevice.h */,
-				32DAE01F10869AFC03135ADB84CE7F9E /* EZAudioDisplayLink.h */,
-				5EBA1B753118C1078151286E09E3FEB9 /* EZAudioFFT.h */,
-				ED64D23EDA0A0AD08A57E8AE1A3F8C53 /* EZAudioFile.h */,
-				DCA48ED294D469A4A091C654D50C6F72 /* EZAudioFileMarker.h */,
-				E21A02BB12B29A902B7A22582DEDA110 /* EZAudioFloatConverter.h */,
-				D6A06F2504908BCC375B8E9792D6EE47 /* EZAudioFloatData.h */,
-				1EBE87CBAB70FEAA0B9D72C258B9F341 /* EZAudioPlayer.h */,
-				7E25D812A1AF04E13A33E8106476E4B8 /* EZAudioPlot.h */,
-				B3982B7883E11ABF9F3F1D6639AEC5C5 /* EZAudioPlotGL.h */,
-				F1B3893FB12044A4DE1C811174D74963 /* EZAudioUtilities.h */,
-				A63DAB21EFEA72B2C300B876FB9578E8 /* EZMicrophone.h */,
-				849541DCC3972083E6007880BF0B7A54 /* EZOutput.h */,
-				4588A270B31AFA0FE0D9E7B13251DD79 /* EZPlot.h */,
-				16E296373B581CA129D7BBADC6EF0A42 /* EZRecorder.h */,
-				E38061A0F88B76FFFFCD86425FE5E512 /* TPCircularBuffer.h */,
-				94AE9AF692D1A82F9960F107D88B59E9 /* Frameworks */,
+				79F95544D5D71717B9AB8AC5870120F4 /* Info.plist */,
+				C6665DB783A55A634E828526F63AD6AA /* SwiftSiriWaveformView.modulemap */,
+				21BFE97AC7FCAE5D7D751090706B95F3 /* SwiftSiriWaveformView.xcconfig */,
+				87E388DBA25F93EE94E9874FD9259F88 /* SwiftSiriWaveformView-dummy.m */,
+				6891EB44D7A3478099EA2FDC8EC2A276 /* SwiftSiriWaveformView-prefix.pch */,
+				19BEB87D6A022602EFC39E55A74E3D4D /* SwiftSiriWaveformView-umbrella.h */,
 			);
-			name = AudioKit;
-			path = AudioKit;
+			name = "Support Files";
+			path = "../Target Support Files/SwiftSiriWaveformView";
 			sourceTree = "<group>";
 		};
 		1A3F6DBDEC06F8E0B61DAAC690F2C2D2 /* Pods-FreqAlertsUITests */ = {
@@ -365,38 +311,44 @@
 			path = "Target Support Files/Pods-FreqAlerts";
 			sourceTree = "<group>";
 		};
-		22D6775518F3F0A8FE2CF2E7BC5D5A36 /* Pods */ = {
+		2D93B4EE82BAC735F0306FE525581243 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0785EFE689C8B43C236166D891A2D63C /* AudioKit */,
-				CF4BDC3908CA2EE8C747880FDD12442B /* KDCircularProgress */,
-				34A3B25309C41A004031F2598F757372 /* SwiftSiriWaveformView */,
+				0B5A3DC0FF33DF7F7E9AC02CC935B028 /* AudioKit.framework */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3294D5D5CA8B49E0D83DA11599D03B18 /* Support Files */ = {
+		36E957F24726845273420F23F144F522 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FA7FC4343E99E4D445AFCC12EC7C68A2 /* Info.plist */,
-				C9263850B6A53842DBB1E80F630F6739 /* KDCircularProgress.modulemap */,
-				FE48E30CA66098CAA4926B9CEE9662F1 /* KDCircularProgress.xcconfig */,
-				DCF3D6F8069F693EF4658A8065B8CD34 /* KDCircularProgress-dummy.m */,
-				C0C369785F4086F357601151786996D8 /* KDCircularProgress-prefix.pch */,
-				3BAC3BA1AC424F509C52A012B136830D /* KDCircularProgress-umbrella.h */,
+				008E404996C9DFE233F9247EFA971EE6 /* Hex.modulemap */,
+				187EBC9598C80B752D72FB872DB5CF9F /* Hex.xcconfig */,
+				1084545E24AA444078C8624CC2FD5537 /* Hex-dummy.m */,
+				B08F67AF986F350C6A809B379FBC4E21 /* Hex-prefix.pch */,
+				A70EBD3DC9F317474B09CBD42E761D2A /* Hex-umbrella.h */,
+				9DBA64D3EE21C7732CCE78B55F08F4D4 /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/KDCircularProgress";
+			path = "../Target Support Files/Hex";
 			sourceTree = "<group>";
 		};
-		34A3B25309C41A004031F2598F757372 /* SwiftSiriWaveformView */ = {
+		3FD80E553763CF439A61C3BDB6552D36 /* SwiftSiriWaveformView */ = {
 			isa = PBXGroup;
 			children = (
-				2BE283CCAB6EED6616A10F77E52F21C3 /* SwiftSiriWaveformView.swift */,
-				DF1272E2E5A92FF9266F801B18572E4C /* Support Files */,
+				E53120047C39E4110117EDCBD1E768CC /* SwiftSiriWaveformView.swift */,
+				016AA6697B66BA134BAC7F88F28FBD0C /* Support Files */,
 			);
 			name = SwiftSiriWaveformView;
 			path = SwiftSiriWaveformView;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE98446B568159EE277B68FD442AF0 /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		4A14041513C9C1C05B00BBAFE323F5AD /* Pods-FreqAlertsTests */ = {
@@ -417,43 +369,144 @@
 			path = "Target Support Files/Pods-FreqAlertsTests";
 			sourceTree = "<group>";
 		};
-		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+		59C3ABF78AE789923E7D47D75DFBE200 /* AudioKit */ = {
 			isa = PBXGroup;
 			children = (
-				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+				AC576B2EBCDD0BF8548922FFF26B9F39 /* AKAmplitudeEnvelopeAudioUnit.h */,
+				585F9D5A228BF468754223E0FE85CD5B /* AKAmplitudeTrackerAudioUnit.h */,
+				DF5DE1092E007CFE67FE2CFCCDEDF346 /* AKAudioUnit.h */,
+				8BF64204E94EF9463179DFB7E07C6693 /* AKAutoWahAudioUnit.h */,
+				12EE5F933B901316C9F2C7A176D0805E /* AKBalancerAudioUnit.h */,
+				C2214DD4A5F28F68EFF9164E7F0C1D59 /* AKBandPassButterworthFilterAudioUnit.h */,
+				F8B20F4A5F10A65AA3D21659572F27BF /* AKBandRejectButterworthFilterAudioUnit.h */,
+				798F84114364F67128A6FB52C28A5362 /* AKBitCrusherAudioUnit.h */,
+				52C8B30DB7C6EBD67264F794395CAE8F /* AKBoosterAudioUnit.h */,
+				466D8DCED4B5A73EC21F83EEABECD72E /* AKBrownianNoiseAudioUnit.h */,
+				4FB0157927826A9B3E5CFB95405A2960 /* AKChowningReverbAudioUnit.h */,
+				216A5335A6B736327E7D6C843F111C77 /* AKClarinetAudioUnit.h */,
+				316E31C6C79776EC0CCBBD0DF1844902 /* AKClipperAudioUnit.h */,
+				FD142DCAFF5E9710751762C9869A79F6 /* AKCombFilterReverbAudioUnit.h */,
+				DCA8764E0FF367BB9877B63B43B868A8 /* AKConvolutionAudioUnit.h */,
+				4F3614BC52707B3AC1E0D8482BA74E71 /* AKCostelloReverbAudioUnit.h */,
+				C5DF6850D4E859351BC79BF821638E9B /* AKDCBlockAudioUnit.h */,
+				EE9448E207C9C75BE43BA59C43D20178 /* AKDripAudioUnit.h */,
+				8D5A3DD87C480C8CD80753C1DEBCE2A1 /* AKDynamicRangeCompressorAudioUnit.h */,
+				3E32F110DBB7670ACC21EA660BE595A7 /* AKEqualizerFilterAudioUnit.h */,
+				DF0B6053A145C08F87E81F67BE0E743C /* AKFlatFrequencyResponseReverbAudioUnit.h */,
+				92878074F81139587A7ADACC71CBE1D6 /* AKFluteAudioUnit.h */,
+				A653DEE84AB5025F706ADA6DDE10C841 /* AKFMOscillatorAudioUnit.h */,
+				863D03B36DEEDB6867694BE39631A5FA /* AKFMOscillatorBankAudioUnit.h */,
+				553BEB8CD27B1D4E679C84526654CC24 /* AKFormantFilterAudioUnit.h */,
+				8DDC7E52D6F639AF45339C2A06127CE2 /* AKFrequencyTrackerAudioUnit.h */,
+				A68B43B27350A104510D51F912FE2B2E /* AKHighPassButterworthFilterAudioUnit.h */,
+				140058EA9C07388E5F6D55431052034A /* AKHighShelfParametricEqualizerFilterAudioUnit.h */,
+				5E8F1609F0595EED4090AA511FCCB393 /* AKKorgLowPassFilterAudioUnit.h */,
+				13A142FD2F82B11D58285E697F640057 /* AKLowPassButterworthFilterAudioUnit.h */,
+				C8273EEC34856CB0DEEA168089B89CAC /* AKLowShelfParametricEqualizerFilterAudioUnit.h */,
+				B84725609C1F9CB34CBAF92F0E434F9A /* AKMandolinAudioUnit.h */,
+				34573E8B585709CD4429103FA8F5443A /* AKMetalBarAudioUnit.h */,
+				2017CE4D2724B69BDAD7E7F7AB0E181D /* AKModalResonanceFilterAudioUnit.h */,
+				9684FA6A673BE45471EE39D3E16BE46D /* AKMoogLadderAudioUnit.h */,
+				3FA93747CC8BE5F487B213734BC61323 /* AKMorphingOscillatorAudioUnit.h */,
+				EF3E4CAB9F63040D9D7903E618C6C2B6 /* AKMorphingOscillatorBankAudioUnit.h */,
+				813272656FC73B1B7E8ADF75F4D23BE0 /* AKOfflineRenderer.h */,
+				6478340052A7231B300293A321D6DAC3 /* AKOperationEffectAudioUnit.h */,
+				0CC793669E2CDC7D0AAEC644E3DE0487 /* AKOperationGeneratorAudioUnit.h */,
+				34C939D125655059A1560F78B3F5E222 /* AKOscillatorAudioUnit.h */,
+				FCB0B45B60BA4DC91823967E56251252 /* AKOscillatorBankAudioUnit.h */,
+				A731C458D1CE110C92E73430E6D1E85C /* AKPannerAudioUnit.h */,
+				A87DF5C4DBD69D4B8B2B89F0AB914E3C /* AKPeakingParametricEqualizerFilterAudioUnit.h */,
+				42B8C99371D545A482D6E1184ACC7F2D /* AKPhaseDistortionOscillatorAudioUnit.h */,
+				F1D824785349D5580F91DE2557AEFB74 /* AKPhaseDistortionOscillatorBankAudioUnit.h */,
+				3B0AD9206B49A351D88D6757DDD19876 /* AKPhaseLockedVocoderAudioUnit.h */,
+				678936738D8A7EFC04123855800D4085 /* AKPhaserAudioUnit.h */,
+				54DB26A98683E1333C520483D47CEA5F /* AKPinkNoiseAudioUnit.h */,
+				A176A2F83F8C8F2A80DD17D6A876AB15 /* AKPitchShifterAudioUnit.h */,
+				2BDDAD939B78D95B40D4CC39DB6AF051 /* AKPluckedStringAudioUnit.h */,
+				9BE58503AE8191182368BCBA04ADF1E4 /* AKPWMOscillatorAudioUnit.h */,
+				9EAD5CC91C810B19E55C29A6EDCCB3A1 /* AKPWMOscillatorBankAudioUnit.h */,
+				A4B9A8FCCD01B86C205611301EF3145A /* AKResonantFilterAudioUnit.h */,
+				8D0727442CF050805343BFEAF9BF5A85 /* AKRhodesPianoAudioUnit.h */,
+				90E995B5E6030AE62A5B85F47CA32E8F /* AKRolandTB303FilterAudioUnit.h */,
+				8F2024BDDDD1E4CE5043120ED88BE637 /* AKShakerAudioUnit.h */,
+				59E5A4E24447604AAB40BBB9A0E17EC0 /* AKSporthStack.h */,
+				408A69B2BC6FB349565AD413F04A6829 /* AKStereoFieldLimiterAudioUnit.h */,
+				F2EF8225AB544EEBF665DBDA9363B940 /* AKStringResonatorAudioUnit.h */,
+				2CE8028202802C5B9C6E4C8167559759 /* AKTanhDistortionAudioUnit.h */,
+				E39B3E32357EADB9017131355A793A7C /* AKTesterAudioUnit.h */,
+				E03242FCDE39389014EE5828EF88B8C9 /* AKThreePoleLowpassFilterAudioUnit.h */,
+				51258601EF777B21D24B8AC4A537BA53 /* AKToneComplementFilterAudioUnit.h */,
+				2E4369CEA7432A1A42285F1EB9A4BD30 /* AKToneFilterAudioUnit.h */,
+				2C82EF0D29A33A1C35CDF1861E2D0CB5 /* AKTremoloAudioUnit.h */,
+				8E69E3262C1A39CE1CDA7B2F3831B4B8 /* AKTubularBellsAudioUnit.h */,
+				350AB2F9BA8D6A042A578BF64C6B185D /* AKVariableDelayAudioUnit.h */,
+				BB2A86A733976687F673ABBA9370C7BC /* AKWhiteNoiseAudioUnit.h */,
+				813EF33CD77F4F3E43BD262922B0B797 /* AKZitaReverbAudioUnit.h */,
+				5043F3D5C44ED4B6D5BBB246DA362BB9 /* AudioKit.h */,
+				7D8BB7ABF9E63DE545477B9CD95DD48B /* AudioKit-Swift.h */,
+				2FE6C9EA3ACC665145E6F71C611CF91C /* EZAudio.h */,
+				2EBDC8E95BF4BECD98DBA184DBE28BB2 /* EZAudioDevice.h */,
+				B475D56272D12508879A73353E9A5C51 /* EZAudioDisplayLink.h */,
+				78D763A315ABF08F167FC3021340EF9F /* EZAudioFFT.h */,
+				03244409C38570D1EA8D0AF4FA645524 /* EZAudioFile.h */,
+				A10894C5F77854085F0B957A3BB0C8A6 /* EZAudioFileMarker.h */,
+				58F7331B6439F58A5148D8A92124F13A /* EZAudioFloatConverter.h */,
+				154C16537042AF95D2283AC93C5B105C /* EZAudioFloatData.h */,
+				88DE28FC9D52CF0FE7392BE8ADBB25BB /* EZAudioPlayer.h */,
+				7FF1B08193992392776FE87582071182 /* EZAudioPlot.h */,
+				08C0166F6D71942A92DB0090558C6C91 /* EZAudioPlotGL.h */,
+				74BE5CBF13A53F2FBFA23D2950C686CC /* EZAudioUtilities.h */,
+				D9B3A0D8D85D9D1F8EFB81A21F9A55E1 /* EZMicrophone.h */,
+				5E83AF54B6D147ACD03253BAC2F0386B /* EZOutput.h */,
+				5BAEA5C0851F8CF8F9B4F5CE40DA9BF2 /* EZPlot.h */,
+				EFD7D658D6908B32F3B6B91D8BA82C37 /* EZRecorder.h */,
+				AC51719A50B3272EC3F0627DC98CACB0 /* TPCircularBuffer.h */,
+				2D93B4EE82BAC735F0306FE525581243 /* Frameworks */,
 			);
-			name = iOS;
+			name = AudioKit;
+			path = AudioKit;
+			sourceTree = "<group>";
+		};
+		642172B91A9F3B78DFA9A51148DA09F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				59C3ABF78AE789923E7D47D75DFBE200 /* AudioKit */,
+				8F6549DF246485947DB2A1327CC8682F /* Hex */,
+				79370A91BCECAB673062F3CE9AA69395 /* KDCircularProgress */,
+				3FD80E553763CF439A61C3BDB6552D36 /* SwiftSiriWaveformView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		79370A91BCECAB673062F3CE9AA69395 /* KDCircularProgress */ = {
+			isa = PBXGroup;
+			children = (
+				1E03E2CC5232D80A07DD16501848B552 /* KDCircularProgress.swift */,
+				DD9B951BA6DC2F341A95B30252DD5FEC /* Support Files */,
+			);
+			name = KDCircularProgress;
+			path = KDCircularProgress;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				22D6775518F3F0A8FE2CF2E7BC5D5A36 /* Pods */,
-				86EF67895576B30E3C6D57A198E5938D /* Products */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				642172B91A9F3B78DFA9A51148DA09F4 /* Pods */,
+				C21B56FD08270E7A76266B1BE01DCF9E /* Products */,
 				B4894A6BE4D8D6A1C1AA043992D9E0FE /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		86EF67895576B30E3C6D57A198E5938D /* Products */ = {
+		8F6549DF246485947DB2A1327CC8682F /* Hex */ = {
 			isa = PBXGroup;
 			children = (
-				113667D29CAC11EC09C67061605F72BB /* KDCircularProgress.framework */,
-				883FF2962067A058EA958816A4D123A7 /* Pods_FreqAlerts.framework */,
-				21BDEB02FE8CB6D9B8437175248EC88C /* Pods_FreqAlertsTests.framework */,
-				7C8966C007E5966E55A693424BB98860 /* Pods_FreqAlertsUITests.framework */,
-				42B543193BFD0BF54E08868C47902A2F /* SwiftSiriWaveformView.framework */,
+				1BCF5403F32A4AC36C8A248B774DEDBE /* UIColor+Hex.swift */,
+				36E957F24726845273420F23F144F522 /* Support Files */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		94AE9AF692D1A82F9960F107D88B59E9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5CF7404E1FC9D9648DF2BA8120E1C1DD /* AudioKit.framework */,
-			);
-			name = Frameworks;
+			name = Hex;
+			path = Hex;
 			sourceTree = "<group>";
 		};
 		B4894A6BE4D8D6A1C1AA043992D9E0FE /* Targets Support Files */ = {
@@ -466,36 +519,40 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		C21B56FD08270E7A76266B1BE01DCF9E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+				93F959A0A876313533A781CB85DC33B5 /* Hex.framework */,
+				D623AB4E760170203C213454A1FC9C84 /* KDCircularProgress.framework */,
+				E8088CC2D5929AD37DD0249C111332F8 /* Pods_FreqAlerts.framework */,
+				D10759CA02BF1A1567D165564DD765EB /* Pods_FreqAlertsTests.framework */,
+				2EF2C8F3DCB1C5FE003FF78248637A2E /* Pods_FreqAlertsUITests.framework */,
+				ADF5DB6DB7B0269F9ECD1F1DA3BCB7E3 /* SwiftSiriWaveformView.framework */,
 			);
-			name = Frameworks;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		CF4BDC3908CA2EE8C747880FDD12442B /* KDCircularProgress */ = {
+		DD9B951BA6DC2F341A95B30252DD5FEC /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E46258779825381E5A6241826554E005 /* KDCircularProgress.swift */,
-				3294D5D5CA8B49E0D83DA11599D03B18 /* Support Files */,
-			);
-			name = KDCircularProgress;
-			path = KDCircularProgress;
-			sourceTree = "<group>";
-		};
-		DF1272E2E5A92FF9266F801B18572E4C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				430EF381DAEB21AFD7B7EB176999E147 /* Info.plist */,
-				C312629955868E0792E4F8CD29275B66 /* SwiftSiriWaveformView.modulemap */,
-				1AD07085453DD38644B2ECC172140655 /* SwiftSiriWaveformView.xcconfig */,
-				9251F3BAD4B6E1C529F67A962F37FF41 /* SwiftSiriWaveformView-dummy.m */,
-				7B16F8607DDC4C47BE9A76D27A11C9B6 /* SwiftSiriWaveformView-prefix.pch */,
-				026C7922DFF6D51BB83B8EB20AF7E810 /* SwiftSiriWaveformView-umbrella.h */,
+				63947A5E15335789A3579742C98F4BEE /* Info.plist */,
+				5B521208E90E9274160E15E9E200E18B /* KDCircularProgress.modulemap */,
+				B6ACF443121F3B3F7B1DF9C97DEDA5D8 /* KDCircularProgress.xcconfig */,
+				A4F919755FC37C3CB86BEBF639C76E78 /* KDCircularProgress-dummy.m */,
+				0BC0774BD2BEA12D1919530405FA2443 /* KDCircularProgress-prefix.pch */,
+				182CE3668E137549339939046800F976 /* KDCircularProgress-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SwiftSiriWaveformView";
+			path = "../Target Support Files/KDCircularProgress";
+			sourceTree = "<group>";
+		};
+		E6EE98446B568159EE277B68FD442AF0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */,
+				7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -509,6 +566,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		146BD171060D47F00DD895BF18E3E797 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBB754F08D9A792D22F9AC7EC5CF4F76 /* SwiftSiriWaveformView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2D29D37B244E87974A56CFC925505DAD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -517,11 +582,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7FF6DEEA47C817E74A079470A5788B40 /* Headers */ = {
+		4077D5F0C5548857B2873496E6ED70ED /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0768303458B32B0084B3E213806D84BB /* SwiftSiriWaveformView-umbrella.h in Headers */,
+				696B0D1616735F09C83C438E207F06D2 /* Hex-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85F3E6671B211ACFCA06962145DF5C0D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CEB3CAD8A478B84AB9341EDF8C9D8D1 /* Pods-FreqAlerts-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,34 +606,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DACB8BFA3D8AE2D9A4272FB61F82B3FD /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8121E73C4AA88D04F0B3B25EE813C6C7 /* Pods-FreqAlerts-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0DFAF833C4B144F8333B3F8A2FA20530 /* Pods-FreqAlerts */ = {
+		0A2CED212E688D56D6F85B22ED4CE0A8 /* SwiftSiriWaveformView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8807C1F1164929269B7E90A958B0A6AB /* Build configuration list for PBXNativeTarget "Pods-FreqAlerts" */;
+			buildConfigurationList = ADCE100CBF8C2E3ECE6AB2D09EB52011 /* Build configuration list for PBXNativeTarget "SwiftSiriWaveformView" */;
 			buildPhases = (
-				3190434BD430A94321C0D201FFF29919 /* Sources */,
-				F0F4D00C14FEBF579DC0B12494EC00C1 /* Frameworks */,
-				DACB8BFA3D8AE2D9A4272FB61F82B3FD /* Headers */,
+				FCD5558660ABDDF23DCCC1655176DAA6 /* Sources */,
+				029FD9EF106A399C7A471FB0C7C0305C /* Frameworks */,
+				146BD171060D47F00DD895BF18E3E797 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				49B5A064ABF65282388FD0DC32057C5B /* PBXTargetDependency */,
-				50DA83F2725DEF5D1B269F1F31E2545F /* PBXTargetDependency */,
 			);
-			name = "Pods-FreqAlerts";
-			productName = "Pods-FreqAlerts";
-			productReference = 883FF2962067A058EA958816A4D123A7 /* Pods_FreqAlerts.framework */;
+			name = SwiftSiriWaveformView;
+			productName = SwiftSiriWaveformView;
+			productReference = ADF5DB6DB7B0269F9ECD1F1DA3BCB7E3 /* SwiftSiriWaveformView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		322428ECC8C5EC71F14C92233787C7AC /* KDCircularProgress */ = {
@@ -577,7 +640,44 @@
 			);
 			name = KDCircularProgress;
 			productName = KDCircularProgress;
-			productReference = 113667D29CAC11EC09C67061605F72BB /* KDCircularProgress.framework */;
+			productReference = D623AB4E760170203C213454A1FC9C84 /* KDCircularProgress.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		567D19F17713806415E44390D6CA5985 /* Pods-FreqAlerts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7A27E81FF7B50C36F8E4BDCD0736BBC /* Build configuration list for PBXNativeTarget "Pods-FreqAlerts" */;
+			buildPhases = (
+				E36A59747B9D5568441128B7D8A66E53 /* Sources */,
+				3D490953AA60714328D1621AF965F8ED /* Frameworks */,
+				85F3E6671B211ACFCA06962145DF5C0D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2E2209336B8D6DBDD19A27E49D1C6E1 /* PBXTargetDependency */,
+				EE259C5AB4FF4BFA417CC26613FFE77C /* PBXTargetDependency */,
+				B93A3685C8C91BAE89E0E0068AC32E15 /* PBXTargetDependency */,
+			);
+			name = "Pods-FreqAlerts";
+			productName = "Pods-FreqAlerts";
+			productReference = E8088CC2D5929AD37DD0249C111332F8 /* Pods_FreqAlerts.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		682C458B69A37816E38465B82FFC3756 /* Hex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E9983943E7C9942AEB24D776E12D80C /* Build configuration list for PBXNativeTarget "Hex" */;
+			buildPhases = (
+				AFE3DF7A575DDF242FF697B0103C8B49 /* Sources */,
+				BE49DE2C8148A0CE5474ECD6C5482DC3 /* Frameworks */,
+				4077D5F0C5548857B2873496E6ED70ED /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hex;
+			productName = Hex;
+			productReference = 93F959A0A876313533A781CB85DC33B5 /* Hex.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C039A6CFFB99931C529BA5FA27EA5199 /* Pods-FreqAlertsTests */ = {
@@ -594,24 +694,7 @@
 			);
 			name = "Pods-FreqAlertsTests";
 			productName = "Pods-FreqAlertsTests";
-			productReference = 21BDEB02FE8CB6D9B8437175248EC88C /* Pods_FreqAlertsTests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C4DCE20B657ED1FEF68B636AB568FD46 /* SwiftSiriWaveformView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 533E948D1061008817B16D8BD56E69CB /* Build configuration list for PBXNativeTarget "SwiftSiriWaveformView" */;
-			buildPhases = (
-				1326FC5A81734579C291DD7F9B3BF71D /* Sources */,
-				67A49A6D049ACA08FA0E6BA5A49581DF /* Frameworks */,
-				7FF6DEEA47C817E74A079470A5788B40 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SwiftSiriWaveformView;
-			productName = SwiftSiriWaveformView;
-			productReference = 42B543193BFD0BF54E08868C47902A2F /* SwiftSiriWaveformView.framework */;
+			productReference = D10759CA02BF1A1567D165564DD765EB /* Pods_FreqAlertsTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		CC1D82E12E78D14E592E9B9982EBBA10 /* Pods-FreqAlertsUITests */ = {
@@ -628,7 +711,7 @@
 			);
 			name = "Pods-FreqAlertsUITests";
 			productName = "Pods-FreqAlertsUITests";
-			productReference = 7C8966C007E5966E55A693424BB98860 /* Pods_FreqAlertsUITests.framework */;
+			productReference = 2EF2C8F3DCB1C5FE003FF78248637A2E /* Pods_FreqAlertsUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -648,29 +731,21 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 86EF67895576B30E3C6D57A198E5938D /* Products */;
+			productRefGroup = C21B56FD08270E7A76266B1BE01DCF9E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				682C458B69A37816E38465B82FFC3756 /* Hex */,
 				322428ECC8C5EC71F14C92233787C7AC /* KDCircularProgress */,
-				0DFAF833C4B144F8333B3F8A2FA20530 /* Pods-FreqAlerts */,
+				567D19F17713806415E44390D6CA5985 /* Pods-FreqAlerts */,
 				C039A6CFFB99931C529BA5FA27EA5199 /* Pods-FreqAlertsTests */,
 				CC1D82E12E78D14E592E9B9982EBBA10 /* Pods-FreqAlertsUITests */,
-				C4DCE20B657ED1FEF68B636AB568FD46 /* SwiftSiriWaveformView */,
+				0A2CED212E688D56D6F85B22ED4CE0A8 /* SwiftSiriWaveformView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1326FC5A81734579C291DD7F9B3BF71D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3F665426A30384B0210DC9F6DA5C2436 /* SwiftSiriWaveformView-dummy.m in Sources */,
-				130C33D8ED22E6F0776D777BA0DA475C /* SwiftSiriWaveformView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1AA6F85D57D795B2FDF31542AB467F50 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -679,11 +754,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3190434BD430A94321C0D201FFF29919 /* Sources */ = {
+		AFE3DF7A575DDF242FF697B0103C8B49 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F8F8A3E31E9DDB734510EB9835FB119 /* Pods-FreqAlerts-dummy.m in Sources */,
+				5EADE880F3726F353A78A394963A80A3 /* Hex-dummy.m in Sources */,
+				EF0D980228E725EE72B1AAE4C859EE41 /* UIColor+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -704,59 +780,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E36A59747B9D5568441128B7D8A66E53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B3881BC2A593E70997EB237F4CB0D05 /* Pods-FreqAlerts-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCD5558660ABDDF23DCCC1655176DAA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3A7560D2372BA78BE35459B31C41B83 /* SwiftSiriWaveformView-dummy.m in Sources */,
+				B3735C71EC67493E4A09CFF846958951 /* SwiftSiriWaveformView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		49B5A064ABF65282388FD0DC32057C5B /* PBXTargetDependency */ = {
+		B93A3685C8C91BAE89E0E0068AC32E15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftSiriWaveformView;
+			target = 0A2CED212E688D56D6F85B22ED4CE0A8 /* SwiftSiriWaveformView */;
+			targetProxy = 84B3FAF9E92C624C8E6DE2F32BA87FB2 /* PBXContainerItemProxy */;
+		};
+		EE259C5AB4FF4BFA417CC26613FFE77C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = KDCircularProgress;
 			target = 322428ECC8C5EC71F14C92233787C7AC /* KDCircularProgress */;
-			targetProxy = DF6B05D5A5C7A377408B4EDC45951F34 /* PBXContainerItemProxy */;
+			targetProxy = 22618B853CE70A39B82A276A9E723B41 /* PBXContainerItemProxy */;
 		};
-		50DA83F2725DEF5D1B269F1F31E2545F /* PBXTargetDependency */ = {
+		F2E2209336B8D6DBDD19A27E49D1C6E1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SwiftSiriWaveformView;
-			target = C4DCE20B657ED1FEF68B636AB568FD46 /* SwiftSiriWaveformView */;
-			targetProxy = E6266053F718C3077CC0C7B42CF14CE6 /* PBXContainerItemProxy */;
+			name = Hex;
+			target = 682C458B69A37816E38465B82FFC3756 /* Hex */;
+			targetProxy = C3A12202488B46C33A4E3924D00F793B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0003AB3C862B4AD5C174AF52D61DBDDF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 919F45CD43E8C13C69D119B58B55C917 /* Pods-FreqAlerts.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-FreqAlerts/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FreqAlerts/Pods-FreqAlerts.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_FreqAlerts;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		01E0DA493E9F07753F3844126F15B8BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C6EE11DAE3B7C2CD8130CD84A7CB8129 /* Pods-FreqAlertsTests.debug.xcconfig */;
@@ -832,9 +896,9 @@
 			};
 			name = Release;
 		};
-		7179E842B18AFB002AE918246BA9FC8E /* Release */ = {
+		1939441B634057B990D4A5B4CA6D70E0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE48E30CA66098CAA4926B9CEE9662F1 /* KDCircularProgress.xcconfig */;
+			baseConfigurationReference = 919F45CD43E8C13C69D119B58B55C917 /* Pods-FreqAlerts.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -847,14 +911,82 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/KDCircularProgress/KDCircularProgress-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KDCircularProgress/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-FreqAlerts/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/KDCircularProgress/KDCircularProgress.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FreqAlerts/Pods-FreqAlerts.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = KDCircularProgress;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FreqAlerts;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		212F753C20BF269032AB8CBB5C84191F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21BFE97AC7FCAE5D7D751090706B95F3 /* SwiftSiriWaveformView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSiriWaveformView/SwiftSiriWaveformView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSiriWaveformView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftSiriWaveformView/SwiftSiriWaveformView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftSiriWaveformView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2496B93CD3DA4461B1F584143ACB80D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21BFE97AC7FCAE5D7D751090706B95F3 /* SwiftSiriWaveformView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSiriWaveformView/SwiftSiriWaveformView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSiriWaveformView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftSiriWaveformView/SwiftSiriWaveformView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftSiriWaveformView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -864,7 +996,7 @@
 			};
 			name = Release;
 		};
-		7206BBC6A26F2ADB3C8F332B7136398B /* Debug */ = {
+		5480FFDEEDBF7A5DAEDC01DF47C4F7FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 31854A85A7CE3FD566D30656D1C385D0 /* Pods-FreqAlerts.debug.xcconfig */;
 			buildSettings = {
@@ -899,6 +1031,38 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		7179E842B18AFB002AE918246BA9FC8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6ACF443121F3B3F7B1DF9C97DEDA5D8 /* KDCircularProgress.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KDCircularProgress/KDCircularProgress-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KDCircularProgress/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KDCircularProgress/KDCircularProgress.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = KDCircularProgress;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		75D0431E43CB7791DD45E6F3E1877A89 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -935,41 +1099,9 @@
 			};
 			name = Debug;
 		};
-		BBA77E0A91B13620494B2737D8DDAE70 /* Release */ = {
+		8DE9707C5D24B2A364D3F862D30979EE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1AD07085453DD38644B2ECC172140655 /* SwiftSiriWaveformView.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftSiriWaveformView/SwiftSiriWaveformView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftSiriWaveformView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftSiriWaveformView/SwiftSiriWaveformView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftSiriWaveformView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C16053AE6BF70BECEF080D3B913AA075 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1AD07085453DD38644B2ECC172140655 /* SwiftSiriWaveformView.xcconfig */;
+			baseConfigurationReference = 187EBC9598C80B752D72FB872DB5CF9F /* Hex.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -982,14 +1114,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftSiriWaveformView/SwiftSiriWaveformView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftSiriWaveformView/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Hex/Hex-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Hex/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftSiriWaveformView/SwiftSiriWaveformView.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Hex/Hex.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftSiriWaveformView;
+				PRODUCT_NAME = Hex;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1081,7 +1213,7 @@
 		};
 		EC3101F75D1F859576CA6BDA9A7DE6CF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE48E30CA66098CAA4926B9CEE9662F1 /* KDCircularProgress.xcconfig */;
+			baseConfigurationReference = B6ACF443121F3B3F7B1DF9C97DEDA5D8 /* KDCircularProgress.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1111,6 +1243,38 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		ED0D4778B75004E1BD57D4AF3ADBC6F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 187EBC9598C80B752D72FB872DB5CF9F /* Hex.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Hex/Hex-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Hex/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Hex/Hex.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Hex;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		F79C3EE4420B6A474D795D3772B88A33 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1168,11 +1332,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		533E948D1061008817B16D8BD56E69CB /* Build configuration list for PBXNativeTarget "SwiftSiriWaveformView" */ = {
+		2E9983943E7C9942AEB24D776E12D80C /* Build configuration list for PBXNativeTarget "Hex" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C16053AE6BF70BECEF080D3B913AA075 /* Debug */,
-				BBA77E0A91B13620494B2737D8DDAE70 /* Release */,
+				8DE9707C5D24B2A364D3F862D30979EE /* Debug */,
+				ED0D4778B75004E1BD57D4AF3ADBC6F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1186,11 +1350,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8807C1F1164929269B7E90A958B0A6AB /* Build configuration list for PBXNativeTarget "Pods-FreqAlerts" */ = {
+		ADCE100CBF8C2E3ECE6AB2D09EB52011 /* Build configuration list for PBXNativeTarget "SwiftSiriWaveformView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7206BBC6A26F2ADB3C8F332B7136398B /* Debug */,
-				0003AB3C862B4AD5C174AF52D61DBDDF /* Release */,
+				212F753C20BF269032AB8CBB5C84191F /* Debug */,
+				2496B93CD3DA4461B1F584143ACB80D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7A27E81FF7B50C36F8E4BDCD0736BBC /* Build configuration list for PBXNativeTarget "Pods-FreqAlerts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5480FFDEEDBF7A5DAEDC01DF47C4F7FD /* Debug */,
+				1939441B634057B990D4A5B4CA6D70E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

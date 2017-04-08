@@ -8,12 +8,11 @@
 
 import UIKit
 import AudioKit
+import SwiftSiriWaveformView
 
 class ViewController: UIViewController {
-
-    @IBOutlet private var frequencyLabel: UILabel!
-    @IBOutlet private var amplitudeLabel: UILabel!
-    @IBOutlet private var audioInputPlot: EZAudioPlot!
+    
+    @IBOutlet weak var waveform: SwiftSiriWaveformView!
     
     var mic: AKMicrophone!
     var tracker: AKFrequencyTracker!
@@ -33,7 +32,6 @@ class ViewController: UIViewController {
         
         AudioKit.output = silence
         AudioKit.start()
-        setupPlot()
         Timer.scheduledTimer(timeInterval: 1,
                              target: self,
                              selector: #selector(ViewController.updateUI),
@@ -42,10 +40,6 @@ class ViewController: UIViewController {
     }
     
     func updateUI() {
-        if tracker.amplitude > 0.1 {
-            frequencyLabel.text = String(format: "%0.1f", tracker.frequency)
-        }
-        amplitudeLabel.text = String(format: "%0.2f", tracker.amplitude)
         
         if tracker.amplitude > 0.1 && tracker.frequency > 1000 {
             toggleFlash(switchOn: true)
@@ -71,21 +65,25 @@ class ViewController: UIViewController {
         }
     }
     
-    func setupPlot() {
-        
-        let plot = AKNodeFFTPlot(mic, frame: audioInputPlot.bounds)
-        plot.plotType = .buffer
-        plot.shouldFill = true
-        plot.shouldMirror = true
-        plot.color = UIColor.blue
-        audioInputPlot.addSubview(plot)
-    }
-    
     @IBAction func handleListen(_ sender: Any) {
         
         
     }
+    
+    @IBAction func handleNewTest(_ sender: Any) {
+        AudioKit.stop()
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ListenVC") as! ListenVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func handleSettings(_ sender: Any) {
+        AudioKit.stop()
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "PreferencesVC") as! PreferencesVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 
+    
+    
 
 }
 

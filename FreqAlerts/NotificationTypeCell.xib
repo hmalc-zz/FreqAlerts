@@ -12,14 +12,14 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NotificationTypeCell" id="gTV-IL-0wX" customClass="NotificationTypeCell" customModule="FreqAlerts" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="267" height="113"/>
+            <rect key="frame" x="0.0" y="0.0" width="366" height="113"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="267" height="113"/>
+                <rect key="frame" x="0.0" y="0.0" width="366" height="113"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iL1-e8-iKh">
-                        <rect key="frame" x="4" y="2" width="259" height="109"/>
+                        <rect key="frame" x="4" y="2" width="358" height="109"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ilm-ip-6ik">
                                 <rect key="frame" x="8" y="32.5" width="44" height="44"/>
@@ -28,21 +28,39 @@
                                     <constraint firstAttribute="height" constant="44" id="yjY-68-jkw"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Jj-Op-0dK">
-                                <rect key="frame" x="60" y="8" width="191" height="93"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dRG-Bh-GxV">
+                                <rect key="frame" x="60" y="32.5" width="233" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Jj-Op-0dK">
+                                        <rect key="frame" x="0.0" y="0.0" width="233" height="22"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mx1-JY-kan">
+                                        <rect key="frame" x="0.0" y="22" width="233" height="22"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1eG-2x-wpj">
+                                <rect key="frame" x="301" y="39" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switch:" destination="gTV-IL-0wX" eventType="valueChanged" id="YDr-8i-SBd"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="6Jj-Op-0dK" secondAttribute="bottom" constant="8" id="WCS-Ye-ZED"/>
-                            <constraint firstItem="6Jj-Op-0dK" firstAttribute="leading" secondItem="ilm-ip-6ik" secondAttribute="trailing" constant="8" id="ZUj-hE-lBz"/>
-                            <constraint firstItem="6Jj-Op-0dK" firstAttribute="top" secondItem="iL1-e8-iKh" secondAttribute="top" constant="8" id="ZqS-ZH-eHC"/>
+                            <constraint firstItem="dRG-Bh-GxV" firstAttribute="centerY" secondItem="iL1-e8-iKh" secondAttribute="centerY" id="IY9-KK-Tzp"/>
+                            <constraint firstItem="dRG-Bh-GxV" firstAttribute="leading" secondItem="ilm-ip-6ik" secondAttribute="trailing" constant="8" id="Sb7-9U-d5h"/>
+                            <constraint firstItem="1eG-2x-wpj" firstAttribute="leading" secondItem="dRG-Bh-GxV" secondAttribute="trailing" constant="8" id="fKz-gu-NwI"/>
                             <constraint firstItem="ilm-ip-6ik" firstAttribute="centerY" secondItem="iL1-e8-iKh" secondAttribute="centerY" id="ijO-SF-IeT"/>
-                            <constraint firstAttribute="trailing" secondItem="6Jj-Op-0dK" secondAttribute="trailing" constant="8" id="oPp-hw-EW1"/>
                             <constraint firstItem="ilm-ip-6ik" firstAttribute="leading" secondItem="iL1-e8-iKh" secondAttribute="leading" constant="8" id="p0j-y7-5Al"/>
+                            <constraint firstItem="1eG-2x-wpj" firstAttribute="centerY" secondItem="iL1-e8-iKh" secondAttribute="centerY" id="ydW-o3-LdL"/>
+                            <constraint firstAttribute="trailing" secondItem="1eG-2x-wpj" secondAttribute="trailing" constant="8" id="zul-Qq-aER"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -58,8 +76,13 @@
                 <constraint firstAttribute="trailing" secondItem="iL1-e8-iKh" secondAttribute="trailing" constant="4" id="hqM-0M-Zw3"/>
                 <constraint firstItem="iL1-e8-iKh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="z31-Re-kuh"/>
             </constraints>
-            <size key="customSize" width="267" height="113"/>
-            <point key="canvasLocation" x="-286.5" y="93.5"/>
+            <size key="customSize" width="366" height="113"/>
+            <connections>
+                <outlet property="iconImage" destination="ilm-ip-6ik" id="5dd-uS-ukz"/>
+                <outlet property="summary" destination="Mx1-JY-kan" id="rmk-dv-qg9"/>
+                <outlet property="title" destination="6Jj-Op-0dK" id="rwL-HB-0aT"/>
+            </connections>
+            <point key="canvasLocation" x="-237" y="93.5"/>
         </collectionViewCell>
     </objects>
 </document>

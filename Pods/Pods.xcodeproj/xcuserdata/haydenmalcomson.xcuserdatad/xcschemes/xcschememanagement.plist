@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Hex.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>KDCircularProgress.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,7 +37,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0DFAF833C4B144F8333B3F8A2FA20530</key>
+		<key>0A2CED212E688D56D6F85B22ED4CE0A8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -42,12 +47,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C039A6CFFB99931C529BA5FA27EA5199</key>
+		<key>567D19F17713806415E44390D6CA5985</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C4DCE20B657ED1FEF68B636AB568FD46</key>
+		<key>682C458B69A37816E38465B82FFC3756</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C039A6CFFB99931C529BA5FA27EA5199</key>
 		<dict>
 			<key>primary</key>
 			<true/>

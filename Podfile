@@ -8,6 +8,7 @@ target 'FreqAlerts' do
   pod 'AudioKit', '~> 3.6'
   pod 'SwiftSiriWaveformView'
   pod 'KDCircularProgress'
+  pod 'Hex'
 
   target 'FreqAlertsTests' do
     inherit! :search_paths

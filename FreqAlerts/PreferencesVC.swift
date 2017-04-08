@@ -12,7 +12,7 @@ class PreferencesVC: UIViewController {
 
     @IBOutlet weak var preferencesCollectionView: UICollectionView!
     
-    var preferences = freqPreferences
+    var preferences = AlarmResponse.getAlarmResponseTypes()
     
     var screenSize = UIScreen.main.bounds.size
     
@@ -30,9 +30,13 @@ class PreferencesVC: UIViewController {
         preferencesCollectionView.register(imageNib, forCellWithReuseIdentifier: "NotificationTypeCell")
         preferencesCollectionView.delegate = self
         preferencesCollectionView.dataSource = self
-        preferencesCollectionView.contentInset.left = 8
         preferencesCollectionView.reloadData()
     }
+    
+    @IBAction func handleDone(_ sender: Any) {
+        _ = self.navigationController?.popViewController(animated: true)
+    }
+    
 }
 
 extension PreferencesVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -42,7 +46,9 @@ extension PreferencesVC: UICollectionViewDelegate, UICollectionViewDataSource, U
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NotificationTypeCell", for: indexPath) as? NotificationTypeCell {
+            cell.configureWithAlarmResponse(alarmResponsePreference: preferences[indexPath.row])
             return cell
         }
         return UICollectionViewCell()

@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '0A2CED212E688D56D6F85B22ED4CE0A8'
-               BlueprintName = 'SwiftSiriWaveformView'
+               BlueprintIdentifier = '682C458B69A37816E38465B82FFC3756'
+               BlueprintName = 'Hex'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'SwiftSiriWaveformView.framework'>
+               BuildableName = 'Hex.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

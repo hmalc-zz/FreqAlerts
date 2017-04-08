@@ -1,0 +1,18 @@
+PODS:
+  - AudioKit (3.6)
+  - KDCircularProgress (1.5.2)
+  - SwiftSiriWaveformView (2.0.0)
+
+DEPENDENCIES:
+  - AudioKit (~> 3.6)
+  - KDCircularProgress
+  - SwiftSiriWaveformView
+
+SPEC CHECKSUMS:
+  AudioKit: 7823de92f3c9570178d2347042867b6a93be1464
+  KDCircularProgress: 12f677b2deb02409ab48c6cae1898d146b8ad549
+  SwiftSiriWaveformView: 85328da51cf5f3c6a0dbcdf9186f4417edf1b538
+
+PODFILE CHECKSUM: 44fcfc59902b45ece9113dbcc192f09ccbca0058
+
+COCOAPODS: 1.2.0

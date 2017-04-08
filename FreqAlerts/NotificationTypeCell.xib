@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NotificationTypeCell" id="gTV-IL-0wX" customClass="NotificationTypeCell" customModule="FreqAlerts" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="267" height="113"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="267" height="113"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iL1-e8-iKh">
+                        <rect key="frame" x="4" y="2" width="259" height="109"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ilm-ip-6ik">
+                                <rect key="frame" x="8" y="32.5" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="9qy-1k-LLg"/>
+                                    <constraint firstAttribute="height" constant="44" id="yjY-68-jkw"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Jj-Op-0dK">
+                                <rect key="frame" x="60" y="8" width="191" height="93"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="6Jj-Op-0dK" secondAttribute="bottom" constant="8" id="WCS-Ye-ZED"/>
+                            <constraint firstItem="6Jj-Op-0dK" firstAttribute="leading" secondItem="ilm-ip-6ik" secondAttribute="trailing" constant="8" id="ZUj-hE-lBz"/>
+                            <constraint firstItem="6Jj-Op-0dK" firstAttribute="top" secondItem="iL1-e8-iKh" secondAttribute="top" constant="8" id="ZqS-ZH-eHC"/>
+                            <constraint firstItem="ilm-ip-6ik" firstAttribute="centerY" secondItem="iL1-e8-iKh" secondAttribute="centerY" id="ijO-SF-IeT"/>
+                            <constraint firstAttribute="trailing" secondItem="6Jj-Op-0dK" secondAttribute="trailing" constant="8" id="oPp-hw-EW1"/>
+                            <constraint firstItem="ilm-ip-6ik" firstAttribute="leading" secondItem="iL1-e8-iKh" secondAttribute="leading" constant="8" id="p0j-y7-5Al"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="iL1-e8-iKh" secondAttribute="bottom" constant="2" id="Cvh-5i-esj"/>
+                <constraint firstItem="iL1-e8-iKh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="UkA-tM-2Lq"/>
+                <constraint firstAttribute="trailing" secondItem="iL1-e8-iKh" secondAttribute="trailing" constant="4" id="hqM-0M-Zw3"/>
+                <constraint firstItem="iL1-e8-iKh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="z31-Re-kuh"/>
+            </constraints>
+            <size key="customSize" width="267" height="113"/>
+            <point key="canvasLocation" x="-286.5" y="93.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

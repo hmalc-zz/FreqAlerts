@@ -1,0 +1,6 @@
+framework module Pods_FreqAlertsUITests {
+  umbrella header "Pods-FreqAlertsUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

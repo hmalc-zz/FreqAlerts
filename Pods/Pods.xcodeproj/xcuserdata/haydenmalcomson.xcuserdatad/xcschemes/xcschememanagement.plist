@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>KDCircularProgress.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-FreqAlerts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-FreqAlertsTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-FreqAlertsUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftSiriWaveformView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0DFAF833C4B144F8333B3F8A2FA20530</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>322428ECC8C5EC71F14C92233787C7AC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C039A6CFFB99931C529BA5FA27EA5199</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C4DCE20B657ED1FEF68B636AB568FD46</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CC1D82E12E78D14E592E9B9982EBBA10</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

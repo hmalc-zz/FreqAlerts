@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03549CF230766988A7E38948 /* Pods_FreqAlertsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F175E94FDD933779054998B /* Pods_FreqAlertsTests.framework */; };
+		B42893D01E99363500066612 /* ListenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42893CF1E99363500066612 /* ListenVC.swift */; };
 		B442698E1E9896A70054EFD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B442698D1E9896A70054EFD1 /* AppDelegate.swift */; };
 		B44269901E9896A70054EFD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B442698F1E9896A70054EFD1 /* ViewController.swift */; };
 		B44269931E9896A70054EFD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B44269911E9896A70054EFD1 /* Main.storyboard */; };
@@ -14,6 +16,13 @@
 		B44269981E9896A70054EFD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B44269961E9896A70054EFD1 /* LaunchScreen.storyboard */; };
 		B44269A31E9896A70054EFD1 /* FreqAlertsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44269A21E9896A70054EFD1 /* FreqAlertsTests.swift */; };
 		B44269AE1E9896A70054EFD1 /* FreqAlertsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44269AD1E9896A70054EFD1 /* FreqAlertsUITests.swift */; };
+		B4DFAEA91E99542F00B1AA0A /* FormattingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DFAEA81E99542F00B1AA0A /* FormattingService.swift */; };
+		B4DFAEAD1E99597100B1AA0A /* NotificationTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DFAEAB1E99597100B1AA0A /* NotificationTypeCell.swift */; };
+		B4DFAEAE1E99597100B1AA0A /* NotificationTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4DFAEAC1E99597100B1AA0A /* NotificationTypeCell.xib */; };
+		B4DFAEB01E995A7800B1AA0A /* PreferencesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DFAEAF1E995A7800B1AA0A /* PreferencesVC.swift */; };
+		B4DFAEB21E995B2300B1AA0A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DFAEB11E995B2300B1AA0A /* Constants.swift */; };
+		DACB295FFCC28D086C3F89ED /* Pods_FreqAlerts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B297829F8F503856FF815D /* Pods_FreqAlerts.framework */; };
+		F9DB2E53BDF25C23EC4B2DC0 /* Pods_FreqAlertsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE53042E3E902AFF11997EB5 /* Pods_FreqAlertsUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D0532D3E0838EDBF3C70C12 /* Pods-FreqAlerts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreqAlerts.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FreqAlerts/Pods-FreqAlerts.debug.xcconfig"; sourceTree = "<group>"; };
+		60E7AC26584D7A6905C85880 /* Pods-FreqAlertsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreqAlertsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FreqAlertsTests/Pods-FreqAlertsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7F89C2BD29E137ED7D8538C0 /* Pods-FreqAlertsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreqAlertsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FreqAlertsTests/Pods-FreqAlertsTests.release.xcconfig"; sourceTree = "<group>"; };
+		9F175E94FDD933779054998B /* Pods_FreqAlertsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreqAlertsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3B297829F8F503856FF815D /* Pods_FreqAlerts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreqAlerts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A40C16F3B818C93E058AD1D3 /* Pods-FreqAlertsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreqAlertsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FreqAlertsUITests/Pods-FreqAlertsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AB3A21F5642C0434D7A2DD6D /* Pods-FreqAlertsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreqAlertsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FreqAlertsUITests/Pods-FreqAlertsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B42893CF1E99363500066612 /* ListenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListenVC.swift; sourceTree = "<group>"; };
 		B442698A1E9896A70054EFD1 /* FreqAlerts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreqAlerts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B442698D1E9896A70054EFD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B442698F1E9896A70054EFD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +64,13 @@
 		B44269A91E9896A70054EFD1 /* FreqAlertsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreqAlertsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B44269AD1E9896A70054EFD1 /* FreqAlertsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreqAlertsUITests.swift; sourceTree = "<group>"; };
 		B44269AF1E9896A70054EFD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4DFAEA81E99542F00B1AA0A /* FormattingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormattingService.swift; sourceTree = "<group>"; };
+		B4DFAEAB1E99597100B1AA0A /* NotificationTypeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTypeCell.swift; sourceTree = "<group>"; };
+		B4DFAEAC1E99597100B1AA0A /* NotificationTypeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationTypeCell.xib; sourceTree = "<group>"; };
+		B4DFAEAF1E995A7800B1AA0A /* PreferencesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesVC.swift; sourceTree = "<group>"; };
+		B4DFAEB11E995B2300B1AA0A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C20D0C7F228DB71B458D24BF /* Pods-FreqAlerts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreqAlerts.release.xcconfig"; path = "Pods/Target Support Files/Pods-FreqAlerts/Pods-FreqAlerts.release.xcconfig"; sourceTree = "<group>"; };
+		DE53042E3E902AFF11997EB5 /* Pods_FreqAlertsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreqAlertsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DACB295FFCC28D086C3F89ED /* Pods_FreqAlerts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03549CF230766988A7E38948 /* Pods_FreqAlertsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +94,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9DB2E53BDF25C23EC4B2DC0 /* Pods_FreqAlertsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A0D9E185C5A340507511476 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3B297829F8F503856FF815D /* Pods_FreqAlerts.framework */,
+				9F175E94FDD933779054998B /* Pods_FreqAlertsTests.framework */,
+				DE53042E3E902AFF11997EB5 /* Pods_FreqAlertsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D717660F8A20CD28F557937 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D0532D3E0838EDBF3C70C12 /* Pods-FreqAlerts.debug.xcconfig */,
+				C20D0C7F228DB71B458D24BF /* Pods-FreqAlerts.release.xcconfig */,
+				60E7AC26584D7A6905C85880 /* Pods-FreqAlertsTests.debug.xcconfig */,
+				7F89C2BD29E137ED7D8538C0 /* Pods-FreqAlertsTests.release.xcconfig */,
+				AB3A21F5642C0434D7A2DD6D /* Pods-FreqAlertsUITests.debug.xcconfig */,
+				A40C16F3B818C93E058AD1D3 /* Pods-FreqAlertsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B44269811E9896A70054EFD1 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +131,8 @@
 				B44269A11E9896A70054EFD1 /* FreqAlertsTests */,
 				B44269AC1E9896A70054EFD1 /* FreqAlertsUITests */,
 				B442698B1E9896A70054EFD1 /* Products */,
+				8D717660F8A20CD28F557937 /* Pods */,
+				5A0D9E185C5A340507511476 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +149,17 @@
 		B442698C1E9896A70054EFD1 /* FreqAlerts */ = {
 			isa = PBXGroup;
 			children = (
+				B4DFAEAA1E99595200B1AA0A /* NotificationPreferenceCells */,
 				B442698D1E9896A70054EFD1 /* AppDelegate.swift */,
 				B442698F1E9896A70054EFD1 /* ViewController.swift */,
+				B42893CF1E99363500066612 /* ListenVC.swift */,
+				B4DFAEA81E99542F00B1AA0A /* FormattingService.swift */,
 				B44269911E9896A70054EFD1 /* Main.storyboard */,
 				B44269941E9896A70054EFD1 /* Assets.xcassets */,
 				B44269961E9896A70054EFD1 /* LaunchScreen.storyboard */,
 				B44269991E9896A70054EFD1 /* Info.plist */,
+				B4DFAEAF1E995A7800B1AA0A /* PreferencesVC.swift */,
+				B4DFAEB11E995B2300B1AA0A /* Constants.swift */,
 			);
 			path = FreqAlerts;
 			sourceTree = "<group>";
@@ -125,6 +182,15 @@
 			path = FreqAlertsUITests;
 			sourceTree = "<group>";
 		};
+		B4DFAEAA1E99595200B1AA0A /* NotificationPreferenceCells */ = {
+			isa = PBXGroup;
+			children = (
+				B4DFAEAB1E99597100B1AA0A /* NotificationTypeCell.swift */,
+				B4DFAEAC1E99597100B1AA0A /* NotificationTypeCell.xib */,
+			);
+			name = NotificationPreferenceCells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B44269B21E9896A70054EFD1 /* Build configuration list for PBXNativeTarget "FreqAlerts" */;
 			buildPhases = (
+				5F50868428BFFD447F37634A /* [CP] Check Pods Manifest.lock */,
 				B44269861E9896A70054EFD1 /* Sources */,
 				B44269871E9896A70054EFD1 /* Frameworks */,
 				B44269881E9896A70054EFD1 /* Resources */,
+				1BDFCF27FDA2DE8CC08FEC0C /* [CP] Embed Pods Frameworks */,
+				FADD3A17F035D84D2874F929 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +218,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B44269B51E9896A70054EFD1 /* Build configuration list for PBXNativeTarget "FreqAlertsTests" */;
 			buildPhases = (
+				C68FE2FB7A3DCEE224911039 /* [CP] Check Pods Manifest.lock */,
 				B442699A1E9896A70054EFD1 /* Sources */,
 				B442699B1E9896A70054EFD1 /* Frameworks */,
 				B442699C1E9896A70054EFD1 /* Resources */,
+				A9130DBB60D181B8D22A3A07 /* [CP] Embed Pods Frameworks */,
+				17B5EEC322EB46997147840E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +239,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B44269B81E9896A70054EFD1 /* Build configuration list for PBXNativeTarget "FreqAlertsUITests" */;
 			buildPhases = (
+				54F5BF06EF5F5778B40B473E /* [CP] Check Pods Manifest.lock */,
 				B44269A51E9896A70054EFD1 /* Sources */,
 				B44269A61E9896A70054EFD1 /* Frameworks */,
 				B44269A71E9896A70054EFD1 /* Resources */,
+				24222AFADA81B34C20C57E67 /* [CP] Embed Pods Frameworks */,
+				2901D25FD7225D4EB8093000 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -237,6 +312,7 @@
 			files = (
 				B44269981E9896A70054EFD1 /* LaunchScreen.storyboard in Resources */,
 				B44269951E9896A70054EFD1 /* Assets.xcassets in Resources */,
+				B4DFAEAE1E99597100B1AA0A /* NotificationTypeCell.xib in Resources */,
 				B44269931E9896A70054EFD1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,12 +333,155 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		17B5EEC322EB46997147840E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FreqAlertsTests/Pods-FreqAlertsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1BDFCF27FDA2DE8CC08FEC0C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FreqAlerts/Pods-FreqAlerts-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		24222AFADA81B34C20C57E67 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FreqAlertsUITests/Pods-FreqAlertsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2901D25FD7225D4EB8093000 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FreqAlertsUITests/Pods-FreqAlertsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54F5BF06EF5F5778B40B473E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5F50868428BFFD447F37634A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A9130DBB60D181B8D22A3A07 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FreqAlertsTests/Pods-FreqAlertsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C68FE2FB7A3DCEE224911039 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FADD3A17F035D84D2874F929 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FreqAlerts/Pods-FreqAlerts-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B44269861E9896A70054EFD1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4DFAEAD1E99597100B1AA0A /* NotificationTypeCell.swift in Sources */,
 				B44269901E9896A70054EFD1 /* ViewController.swift in Sources */,
+				B42893D01E99363500066612 /* ListenVC.swift in Sources */,
+				B4DFAEB01E995A7800B1AA0A /* PreferencesVC.swift in Sources */,
+				B4DFAEB21E995B2300B1AA0A /* Constants.swift in Sources */,
+				B4DFAEA91E99542F00B1AA0A /* FormattingService.swift in Sources */,
 				B442698E1E9896A70054EFD1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +634,7 @@
 		};
 		B44269B31E9896A70054EFD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D0532D3E0838EDBF3C70C12 /* Pods-FreqAlerts.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 95445YS9Q7;
@@ -428,6 +648,7 @@
 		};
 		B44269B41E9896A70054EFD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C20D0C7F228DB71B458D24BF /* Pods-FreqAlerts.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 95445YS9Q7;
@@ -441,6 +662,7 @@
 		};
 		B44269B61E9896A70054EFD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60E7AC26584D7A6905C85880 /* Pods-FreqAlertsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -456,6 +678,7 @@
 		};
 		B44269B71E9896A70054EFD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F89C2BD29E137ED7D8538C0 /* Pods-FreqAlertsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +694,7 @@
 		};
 		B44269B91E9896A70054EFD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB3A21F5642C0434D7A2DD6D /* Pods-FreqAlertsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 95445YS9Q7;
@@ -485,6 +709,7 @@
 		};
 		B44269BA1E9896A70054EFD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A40C16F3B818C93E058AD1D3 /* Pods-FreqAlertsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 95445YS9Q7;
@@ -516,6 +741,7 @@
 				B44269B41E9896A70054EFD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B44269B51E9896A70054EFD1 /* Build configuration list for PBXNativeTarget "FreqAlertsTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +750,7 @@
 				B44269B71E9896A70054EFD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B44269B81E9896A70054EFD1 /* Build configuration list for PBXNativeTarget "FreqAlertsUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +759,7 @@
 				B44269BA1E9896A70054EFD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

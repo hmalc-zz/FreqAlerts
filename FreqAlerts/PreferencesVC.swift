@@ -34,7 +34,7 @@ class PreferencesVC: UIViewController {
     }
     
     @IBAction func handleDone(_ sender: Any) {
-        _ = self.navigationController?.popViewController(animated: true)
+        _ = self.navigationController?.popToRootViewController(animated: true)
     }
     
 }

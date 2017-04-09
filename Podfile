@@ -9,6 +9,7 @@ target 'FreqAlerts' do
   pod 'SwiftSiriWaveformView'
   pod 'KDCircularProgress'
   pod 'Hex'
+  pod 'Charts'
 
   target 'FreqAlertsTests' do
     inherit! :search_paths

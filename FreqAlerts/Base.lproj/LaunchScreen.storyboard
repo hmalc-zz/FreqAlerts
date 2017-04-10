@@ -22,16 +22,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WaveAlerts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CgE-OC-vou">
-                                <rect key="frame" x="136" y="320.5" width="103.5" height="27.5"/>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <rect key="frame" x="112.5" y="413.5" width="151" height="41"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="30"/>
                                 <color key="textColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loadingImage" translatesAutoresizingMaskIntoConstraints="NO" id="IMJ-6g-YAl">
+                                <rect key="frame" x="0.0" y="313.5" width="375" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="a3W-gs-NgM"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="IMJ-6g-YAl" secondAttribute="trailing" id="1bB-7g-dLU"/>
+                            <constraint firstItem="IMJ-6g-YAl" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="LuZ-zQ-g1W"/>
+                            <constraint firstItem="CgE-OC-vou" firstAttribute="top" secondItem="IMJ-6g-YAl" secondAttribute="bottom" constant="60" id="aIM-6j-5oc"/>
                             <constraint firstItem="CgE-OC-vou" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="dK4-cr-GS2"/>
-                            <constraint firstItem="CgE-OC-vou" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="dX7-vF-V2l"/>
+                            <constraint firstItem="IMJ-6g-YAl" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="fxU-uq-xo6"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -40,4 +49,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="loadingImage" width="626" height="69"/>
+    </resources>
 </document>

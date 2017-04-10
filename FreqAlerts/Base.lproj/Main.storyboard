@@ -23,21 +23,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rWx-U8-Acg" customClass="SwiftSiriWaveformView" customModule="SwiftSiriWaveformView">
-                                <rect key="frame" x="0.0" y="220" width="320" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="st3-et-H0I"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="waveColor">
-                                        <color key="value" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="amplitude">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test" translatesAutoresizingMaskIntoConstraints="NO" id="S5U-Nr-fDA">
                                 <rect key="frame" x="23" y="27" width="30" height="30"/>
                                 <constraints>
@@ -88,34 +73,17 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to WaveAlerts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pT4-YY-eiN">
-                                <rect key="frame" x="16" y="100" width="288" height="23.5"/>
+                                <rect key="frame" x="16" y="80" width="288" height="23.5"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You don't have an alarm set up." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XH8-mP-V7t">
-                                <rect key="frame" x="16" y="131.5" width="288" height="18"/>
+                                <rect key="frame" x="16" y="111.5" width="288" height="18"/>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="7Ad-zw-JcG">
-                                <rect key="frame" x="151" y="158" width="18" height="18"/>
-                                <subviews>
-                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="is7-aE-gca">
-                                        <rect key="frame" x="0.0" y="0.0" width="7" height="18"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="13"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huV-3i-rdK">
-                                        <rect key="frame" x="11" y="0.0" width="7" height="18"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="13"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OXD-PE-Jzn" customClass="KDCircularProgress" customModule="KDCircularProgress">
                                 <rect key="frame" x="80" y="368" width="160" height="160"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -146,7 +114,7 @@
                                         <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
-                                        <color key="value" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.4823529411764706" green="0.50588235294117645" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="progressThickness">
                                         <real key="value" value="0.10000000000000001"/>
@@ -154,21 +122,73 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="clockwise" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="9bN-v0-Hb8">
+                                <rect key="frame" x="58" y="149.5" width="204" height="100"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pZk-38-sy8" userLabel="Volume" customClass="WaveAlertPieChart" customModule="FreqAlerts" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="00b-f0-PZ9"/>
+                                            <constraint firstAttribute="height" constant="100" id="Sx3-SW-TnF"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mdX-ml-Y48" userLabel="Frequency" customClass="WaveAlertPieChart" customModule="FreqAlerts" customModuleProvider="target">
+                                        <rect key="frame" x="104" y="0.0" width="100" height="100"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="pZk-38-sy8" firstAttribute="centerY" secondItem="9bN-v0-Hb8" secondAttribute="centerY" id="TcN-ST-amB"/>
+                                    <constraint firstItem="mdX-ml-Y48" firstAttribute="height" secondItem="pZk-38-sy8" secondAttribute="height" id="lTc-Qh-vHf"/>
+                                    <constraint firstItem="mdX-ml-Y48" firstAttribute="width" secondItem="pZk-38-sy8" secondAttribute="width" id="pTz-7A-TSx"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vo2-ZH-Ox8">
+                                <rect key="frame" x="104.5" y="189.5" width="8" height="20.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBg-o9-VGC">
+                                <rect key="frame" x="208.5" y="189.5" width="8" height="20.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rWx-U8-Acg" customClass="SwiftSiriWaveformView" customModule="SwiftSiriWaveformView">
+                                <rect key="frame" x="0.0" y="220" width="320" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="st3-et-H0I"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="waveColor">
+                                        <color key="value" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="amplitude">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="pT4-YY-eiN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="0oS-Yp-xGY"/>
+                            <constraint firstItem="9bN-v0-Hb8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1SH-0p-lD8"/>
                             <constraint firstItem="6d6-KB-hw2" firstAttribute="centerX" secondItem="uS4-M3-78B" secondAttribute="centerX" id="2gp-0q-crs"/>
                             <constraint firstItem="URI-C8-VSM" firstAttribute="centerX" secondItem="OXD-PE-Jzn" secondAttribute="centerX" id="3nb-sd-Abu"/>
                             <constraint firstItem="6d6-KB-hw2" firstAttribute="centerY" secondItem="uS4-M3-78B" secondAttribute="centerY" id="8ZF-9z-490"/>
-                            <constraint firstItem="7Ad-zw-JcG" firstAttribute="top" secondItem="XH8-mP-V7t" secondAttribute="bottom" constant="8" id="8yS-CJ-avI"/>
                             <constraint firstItem="URI-C8-VSM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BLe-Rr-z8B"/>
                             <constraint firstAttribute="trailingMargin" secondItem="pT4-YY-eiN" secondAttribute="trailing" id="DRN-XN-TQ3"/>
+                            <constraint firstItem="vo2-ZH-Ox8" firstAttribute="centerY" secondItem="pZk-38-sy8" secondAttribute="centerY" id="EWl-gY-Paq"/>
                             <constraint firstAttribute="trailing" secondItem="rWx-U8-Acg" secondAttribute="trailing" id="HwS-Dm-uUX"/>
                             <constraint firstItem="XH8-mP-V7t" firstAttribute="top" secondItem="pT4-YY-eiN" secondAttribute="bottom" constant="8" id="Hwo-yU-x5m"/>
-                            <constraint firstItem="pT4-YY-eiN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="JUq-pj-N4O"/>
+                            <constraint firstItem="pT4-YY-eiN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="JUq-pj-N4O"/>
                             <constraint firstItem="S5U-Nr-fDA" firstAttribute="centerY" secondItem="hHg-Cl-EAf" secondAttribute="centerY" id="KTd-mb-POu"/>
+                            <constraint firstItem="9bN-v0-Hb8" firstAttribute="top" secondItem="XH8-mP-V7t" secondAttribute="bottom" constant="20" id="RvM-rr-WsW"/>
                             <constraint firstItem="rWx-U8-Acg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UaL-Z3-nK0"/>
+                            <constraint firstItem="cBg-o9-VGC" firstAttribute="centerX" secondItem="mdX-ml-Y48" secondAttribute="centerX" id="Y3p-gM-RWL"/>
                             <constraint firstItem="URI-C8-VSM" firstAttribute="centerY" secondItem="OXD-PE-Jzn" secondAttribute="centerY" id="Zyc-gk-mBe"/>
                             <constraint firstItem="XH8-mP-V7t" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bF9-D7-seD"/>
                             <constraint firstItem="rWx-U8-Acg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bYe-1S-3Kr"/>
@@ -177,25 +197,28 @@
                             <constraint firstItem="S5U-Nr-fDA" firstAttribute="centerX" secondItem="hHg-Cl-EAf" secondAttribute="centerX" id="gX3-6L-w7Y"/>
                             <constraint firstAttribute="trailingMargin" secondItem="uS4-M3-78B" secondAttribute="trailing" id="krS-I0-BSN"/>
                             <constraint firstItem="uS4-M3-78B" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="nJg-Of-whM"/>
-                            <constraint firstItem="7Ad-zw-JcG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rNj-6h-hZk"/>
+                            <constraint firstItem="vo2-ZH-Ox8" firstAttribute="centerX" secondItem="pZk-38-sy8" secondAttribute="centerX" id="qSO-8U-PRf"/>
                             <constraint firstItem="hHg-Cl-EAf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="s8L-j6-Do9"/>
+                            <constraint firstItem="cBg-o9-VGC" firstAttribute="centerY" secondItem="mdX-ml-Y48" secondAttribute="centerY" id="xdW-Oi-9rJ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="URI-C8-VSM" secondAttribute="bottom" constant="60" id="z4F-Bk-asR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GHV-xi-c0a"/>
                     <connections>
                         <outlet property="circularProgress" destination="OXD-PE-Jzn" id="4V0-w7-P6T"/>
-                        <outlet property="frequencyLabel" destination="huV-3i-rdK" id="fU5-nA-xIj"/>
-                        <outlet property="gainLabel" destination="is7-aE-gca" id="lbV-K0-2H9"/>
+                        <outlet property="frequencyLabel" destination="cBg-o9-VGC" id="9dF-Kg-8DJ"/>
+                        <outlet property="frequencyPie" destination="mdX-ml-Y48" id="BuD-AK-v6M"/>
+                        <outlet property="gainLabel" destination="vo2-ZH-Ox8" id="JQo-Oh-2vx"/>
                         <outlet property="mainButton" destination="URI-C8-VSM" id="KUv-Jg-mUY"/>
                         <outlet property="subtitle" destination="XH8-mP-V7t" id="8yI-xH-9qa"/>
+                        <outlet property="volumePie" destination="pZk-38-sy8" id="Wij-TI-niG"/>
                         <outlet property="waveform" destination="rWx-U8-Acg" id="Kd3-jJ-mvz"/>
                         <outlet property="welcomeString" destination="pT4-YY-eiN" id="CAf-nq-kLX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-328" y="388"/>
+            <point key="canvasLocation" x="-328.125" y="387.67605633802816"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="k6L-nj-ZST">

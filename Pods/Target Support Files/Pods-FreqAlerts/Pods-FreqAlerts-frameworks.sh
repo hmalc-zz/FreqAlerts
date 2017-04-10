@@ -90,12 +90,14 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${PODS_ROOT}/AudioKit/iOS/AudioKit.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Charts/Charts.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Hex/Hex.framework"
   install_framework "$BUILT_PRODUCTS_DIR/KDCircularProgress/KDCircularProgress.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SwiftSiriWaveformView/SwiftSiriWaveformView.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${PODS_ROOT}/AudioKit/iOS/AudioKit.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Charts/Charts.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Hex/Hex.framework"
   install_framework "$BUILT_PRODUCTS_DIR/KDCircularProgress/KDCircularProgress.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SwiftSiriWaveformView/SwiftSiriWaveformView.framework"

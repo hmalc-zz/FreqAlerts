@@ -1,21 +1,26 @@
 PODS:
   - AudioKit (3.6)
+  - Charts (3.0.2):
+    - Charts/Core (= 3.0.2)
+  - Charts/Core (3.0.2)
   - Hex (5.0.1)
   - KDCircularProgress (1.5.2)
   - SwiftSiriWaveformView (2.0.0)
 
 DEPENDENCIES:
   - AudioKit (~> 3.6)
+  - Charts
   - Hex
   - KDCircularProgress
   - SwiftSiriWaveformView
 
 SPEC CHECKSUMS:
   AudioKit: 7823de92f3c9570178d2347042867b6a93be1464
+  Charts: 236d6ccdd0ce6feae151d89e829a7397381a21fd
   Hex: 2c757d81a2b4b6afc842458ce485c8c097ea1c79
   KDCircularProgress: 12f677b2deb02409ab48c6cae1898d146b8ad549
   SwiftSiriWaveformView: 85328da51cf5f3c6a0dbcdf9186f4417edf1b538
 
-PODFILE CHECKSUM: d0a5837c7c807cccf46c2c12f8931081e5a54ac5
+PODFILE CHECKSUM: f632aca0ee879aab2009af5053d56ec5785524e1
 
 COCOAPODS: 1.2.0

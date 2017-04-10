@@ -12,12 +12,14 @@ import SwiftSiriWaveformView
 import AVFoundation
 import AudioToolbox
 import KDCircularProgress
+import Charts
 
 enum RecordingState: Int {
     case noTestAvailable = 0
     case notRecording = 1
     case recording = 2
     case testing = 3
+    case alarmOn = 4
 }
 
 class ViewController: UIViewController {
@@ -28,8 +30,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var welcomeString: UILabel!
     @IBOutlet weak var subtitle: UILabel!
     
-    @IBOutlet weak var gainLabel: UILabel!
-    @IBOutlet weak var frequencyLabel: UILabel!
+    
     
     var player: AVAudioPlayer?
     var timer: Timer?
@@ -47,11 +48,20 @@ class ViewController: UIViewController {
     var frequencySamples: [Double] = []
     var gainSamples: [Double] = []
     
+    var lastSecondGainSamples: [Double] = []
+    var lastSecondFrequencySamples: [Double] = []
+    
     var medianFrequency: Double?
     var medianGain: Double?
     
     var countdownTimer: Timer?
     var didStartListeningTimeStamp: Date?
+
+    @IBOutlet weak var volumePie: WaveAlertPieChart!
+    @IBOutlet weak var frequencyPie: WaveAlertPieChart!
+    
+    @IBOutlet weak var gainLabel: UILabel!
+    @IBOutlet weak var frequencyLabel: UILabel!
 
     @IBOutlet weak var circularProgress: KDCircularProgress!
     
@@ -90,40 +100,76 @@ class ViewController: UIViewController {
 
     }
     
+    func resetCharts(){
+        self.frequencyPie.setPieChart(value: 0, cutoff: 0)
+        self.volumePie.setPieChart(value: 0, cutoff: 0)
+    }
+    
     func configureAppearance(){
         switch self.currentState! {
         case .noTestAvailable:
             mainButton.setTitle("Test Alarm", for: .normal)
-            
             welcomeString.text = "Welcome to WaveAlerts"
             subtitle.text = "You don't have an alarm set up yet!"
             gainLabel.isHidden = true
             frequencyLabel.isHidden = true
-            
+            resetCharts()
         case .notRecording:
             mainButton.setTitle("Start Listening", for: .normal)
             
             welcomeString.text = "WaveAlerts"
-            subtitle.text = "Tap to start listening for an alarm"
+            
+            if let gain = gainCutoff, let frequency = frequencyCutoff {
+                let titleString = "Your alarm is current set as \(gain.formatGain()) volume at \(frequency.formatFrequency())"
+                let coloredComponents = ["\(gain.formatGain())", "\(frequency.formatFrequency())"]
+                subtitle.attributedText = AttributedStringHelper.setAttributedStringWithColoredSection(baseString: titleString, replacementStrings: coloredComponents)
+                
+            } else {
+                subtitle.text = "Tap to start listening for an alarm"
+            }
+            
             gainLabel.isHidden = true
             frequencyLabel.isHidden = true
+            resetCharts()
             
         case .recording:
             mainButton.setTitle("Stop Listening", for: .normal)
             
-            welcomeString.text = "Listening ..."
+            welcomeString.text = "Listening... "
             subtitle.text = "We'll alert you when your alarm goes off!"
+            
             gainLabel.isHidden = false
             frequencyLabel.isHidden = false
+            gainLabel.text = gainCutoff?.formatGain()
+            frequencyLabel.text = frequencyCutoff?.formatFrequency()
             
         case .testing:
             
             mainButton.setTitle("Stop Listening", for: .normal)
             
-            welcomeString.text = "Listening for new Alarm ..."
-            subtitle.text = "Keep your alarm on for \(Int(listeningPeriod)) seconds"
+            welcomeString.text = "Learning new alarm ..."
+            
+            let titleString = "Keep your alarm on for \(Int(listeningPeriod)) seconds"
+            let coloredComponents = ["\(Int(listeningPeriod))"]
+            subtitle.attributedText = AttributedStringHelper.setAttributedStringWithColoredSection(baseString: titleString, replacementStrings: coloredComponents)
+
+            gainLabel.isHidden = false
+            frequencyLabel.isHidden = false
+            gainLabel.text = gainCutoff?.formatGain()
+            frequencyLabel.text = frequencyCutoff?.formatFrequency()
+            resetCharts()
+            
+        case .alarmOn:
+            
+            mainButton.setTitle("Stop Alarm", for: .normal)
+            
+            welcomeString.text = "Alarm Detected!"
+            subtitle.text = "A sound played that sounded like your alarm"
+            
             gainLabel.isHidden = true
             frequencyLabel.isHidden = true
+            resetCharts()
+        
         }
     }
     
@@ -132,54 +178,75 @@ class ViewController: UIViewController {
         self.waveform.amplitude = CGFloat(self.tracker.amplitude)
         
         switch self.currentState! {
-        case .testing:
-            updateStats()
-            if let started = didStartListeningTimeStamp {
-                let timeElapsed = Date().timeIntervalSince(started)
-                if timeElapsed > listeningPeriod {
-                    self.currentState = .notRecording
-                    circularProgress.angle = 0
-                    configureAppearance()
-                    if let frequency = medianFrequency {
-                        UserDefaultsService.setValueForKey(keyString: UserDefaultsService.FREQUENCY_CUTOFF_VALUE, value: frequency)
-                    }
-                    
-                    if let gain = medianGain {
-                        UserDefaultsService.setValueForKey(keyString: UserDefaultsService.GAIN_CUTOFF_VALUE, value: gain)
-                    }
-                    return
+            case .testing:
+                executeTesting()
+            case .notRecording:
+                print("")
+            case .recording:
+                updateStats()
+                
+                lastSecondGainSamples.append(self.tracker.amplitude)
+                if lastSecondGainSamples.count > 10 {
+                    lastSecondGainSamples.removeFirst()
                 }
-                circularProgress.angle = 360 * (timeElapsed/listeningPeriod)
-                mainButton.setTitle("\(Int(ceil(listeningPeriod - timeElapsed)))", for: .normal)
+                lastSecondFrequencySamples.append(self.tracker.frequency)
+                if lastSecondFrequencySamples.count > 10 {
+                    lastSecondFrequencySamples.removeFirst()
+                }
+                volumePie.setPieChart(value: lastSecondGainSamples.reduce(0,+)/lastSecondGainSamples.count, cutoff: gainCutoff!)
+                frequencyPie.setPieChart(value: lastSecondFrequencySamples.reduce(0,+)/lastSecondFrequencySamples.count, cutoff: frequencyCutoff!)
+                guard let gain = self.gainCutoff else { return }
+                guard let frequency = self.frequencyCutoff else { return }
+                if self.tracker.amplitude > gain && self.tracker.frequency > frequency {
+                    self.triggerFlash(switchOn: true)
+                    self.triggerSound()
+                    self.currentState = .alarmOn
+                    configureAppearance()
+                } else {
+                    self.triggerFlash(switchOn: false)
+                }
+            case .noTestAvailable:
+                print("")
+        case .alarmOn:
+                print("")
             }
-            frequencySamples.append(tracker.frequency)
-            frequencySamples = frequencySamples.sorted()
-            if frequencySamples.count > 0 {
-                let index = Int(floor(Double(frequencySamples.count)/2))
-                frequencyLabel.text = frequencySamples[index].formatFrequency()
-                medianFrequency = frequencySamples[index]
+    }
+    
+    func executeTesting(){
+        updateStats()
+        if let started = didStartListeningTimeStamp {
+            let timeElapsed = Date().timeIntervalSince(started)
+            if timeElapsed > listeningPeriod {
+                self.currentState = .notRecording
+                circularProgress.angle = 0
+                if let frequency = medianFrequency {
+                    UserDefaultsService.setValueForKey(keyString: UserDefaultsService.FREQUENCY_CUTOFF_VALUE, value: frequency)
+                    frequencyCutoff = frequency
+                }
+                
+                if let gain = medianGain {
+                    UserDefaultsService.setValueForKey(keyString: UserDefaultsService.GAIN_CUTOFF_VALUE, value: gain)
+                    gainCutoff = gain
+                }
+                configureAppearance()
+                return
             }
-            gainSamples.append(tracker.amplitude)
-            gainSamples = gainSamples.sorted()
-            if gainSamples.count > 0 {
-                let index = Int(floor(Double(gainSamples.count)/2))
-                gainLabel.text = gainSamples[index].formatGain()
-                medianGain = gainSamples[index]
-            }
-        case .notRecording:
-            print("")
-        case .recording:
-            updateStats()
-            guard let gain = self.gainCutoff else { return }
-            guard let frequency = self.frequencyCutoff else { return }
-            if self.tracker.amplitude > gain && self.tracker.frequency > frequency {
-                self.triggerFlash(switchOn: true)
-                self.triggerSound()
-            } else {
-                self.triggerFlash(switchOn: false)
-            }
-        case .noTestAvailable:
-            print("")
+            circularProgress.angle = 360 * (timeElapsed/listeningPeriod)
+            mainButton.setTitle("\(Int(ceil(listeningPeriod - timeElapsed)))", for: .normal)
+        }
+        frequencySamples.append(tracker.frequency)
+        frequencySamples = frequencySamples.sorted()
+        if frequencySamples.count > 0 {
+            let index = Int(floor(Double(frequencySamples.count)/2))
+            frequencyLabel.text = frequencySamples[index].formatFrequency()
+            medianFrequency = frequencySamples[index]
+        }
+        gainSamples.append(tracker.amplitude)
+        gainSamples = gainSamples.sorted()
+        if gainSamples.count > 0 {
+            let index = Int(floor(Double(gainSamples.count)/2))
+            gainLabel.text = gainSamples[index].formatGain()
+            medianGain = gainSamples[index]
         }
     }
     
@@ -230,7 +297,7 @@ class ViewController: UIViewController {
             } else {
                 player.volume = 1
             }
-            player.numberOfLoops = 1
+            player.numberOfLoops = 0
             player.play()
             player.delegate = self
         } catch let error {
@@ -244,24 +311,35 @@ class ViewController: UIViewController {
     }
     
     @IBAction func handleListen(_ sender: Any) {
-        
+        player?.stop()
+        triggerFlash(switchOn: false)
         switch currentState! {
         case .notRecording:
             self.currentState = .recording
         case .recording:
             self.currentState = .notRecording
+            
         case .noTestAvailable:
-            self.didStartListeningTimeStamp = Date()
-            self.currentState = .testing
+            triggerNewTest()
         case .testing:
+            self.currentState = .notRecording
+        case .alarmOn:
             self.currentState = .notRecording
         }
         configureAppearance()
     }
     
+    func triggerNewTest(){
+        self.didStartListeningTimeStamp = Date()
+        self.currentState = .testing
+        frequencySamples = []
+        gainSamples = []
+        configureAppearance()
+    }
+    
     
     @IBAction func handleNewTest(_ sender: Any) {
-        
+        triggerNewTest()
     }
     
     @IBAction func handleSettings(_ sender: Any) {
@@ -273,7 +351,10 @@ class ViewController: UIViewController {
 extension ViewController: AVAudioPlayerDelegate {
     
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
-
+        player.stop()
+        self.currentState = .recording
+        triggerFlash(switchOn: false)
+        configureAppearance()
     }
 }
 

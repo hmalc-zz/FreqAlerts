@@ -81,6 +81,7 @@ class ViewController: UIViewController {
             UserDefaultsService.setBoolValueForKey(keyString: UserDefaultsService.FIRST_LOAD, bool: true)
         }
         timer = Timer.scheduledTimer(timeInterval: 0.01666,target: self, selector: #selector(updateUI), userInfo: nil, repeats: true)
+        UIApplication.shared.isIdleTimerDisabled = true
     }
     
     override func viewWillLayoutSubviews() {
@@ -186,18 +187,25 @@ class ViewController: UIViewController {
                 updateStats()
                 
                 lastSecondGainSamples.append(self.tracker.amplitude)
-                if lastSecondGainSamples.count > 10 {
+                if lastSecondGainSamples.count > 60 {
                     lastSecondGainSamples.removeFirst()
+                    self.medianGain = lastSecondGainSamples.reduce(0,+)/lastSecondGainSamples.count
                 }
                 lastSecondFrequencySamples.append(self.tracker.frequency)
-                if lastSecondFrequencySamples.count > 10 {
+                if lastSecondFrequencySamples.count > 60 {
                     lastSecondFrequencySamples.removeFirst()
+                    self.medianFrequency = lastSecondFrequencySamples.reduce(0,+)/lastSecondFrequencySamples.count
                 }
-                volumePie.setPieChart(value: lastSecondGainSamples.reduce(0,+)/lastSecondGainSamples.count, cutoff: gainCutoff!)
-                frequencyPie.setPieChart(value: lastSecondFrequencySamples.reduce(0,+)/lastSecondFrequencySamples.count, cutoff: frequencyCutoff!)
+                
                 guard let gain = self.gainCutoff else { return }
                 guard let frequency = self.frequencyCutoff else { return }
-                if self.tracker.amplitude > gain && self.tracker.frequency > frequency {
+                guard let averageGain = self.medianGain else { return }
+                guard let averageFrequency = self.medianFrequency else { return }
+                
+                volumePie.setPieChart(value: averageGain, cutoff: gainCutoff!)
+                frequencyPie.setPieChart(value: averageFrequency, cutoff: frequencyCutoff!)
+                
+                if averageGain > gain && averageFrequency > frequency {
                     self.triggerFlash(switchOn: true)
                     self.triggerSound()
                     self.currentState = .alarmOn

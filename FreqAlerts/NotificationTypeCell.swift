@@ -15,6 +15,7 @@ class NotificationTypeCell: UICollectionViewCell {
     @IBOutlet weak var iconImage: UIImageView!
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var summary: UILabel!
+    @IBOutlet weak var preferenceToggle: UISwitch!
     
     
     override func awakeFromNib() {
@@ -27,13 +28,10 @@ class NotificationTypeCell: UICollectionViewCell {
         title.text = alarmResponsePreference.title
         summary.text = alarmResponsePreference.summary
         iconImage.image = alarmResponsePreference.icon.withColor(color: alarmResponsePreference.colorHex)
-        
-        if UserDefaultsService.getBoolValueForKey(keyString: alarmResponsePreference.defaultKey) == nil {
-            UserDefaultsService.setBoolValueForKey(keyString: alarmResponsePreference.defaultKey, bool: true)
-        }
+        preferenceToggle.isOn = UserDefaultsService.getBoolValueForKey(keyString: alarmResponsePreference.defaultKey)
     }
     
-    @IBAction func `switch`(_ sender: UISwitch) {
+    @IBAction func handleToggle(_ sender: UISwitch) {
         UserDefaultsService.setBoolValueForKey(keyString: alarmResponsePreference.defaultKey, bool: sender.isOn)
     }
     

@@ -281,6 +281,10 @@ class ViewController: UIViewController {
     
     func triggerSound(){
         
+        if UserDefaultsService.getBoolValueForKey(keyString: UserDefaultsService.SHOULD_VIBRATE) {
+            AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
+        }
+        
         let url = Bundle.main.url(forResource: "slowrise", withExtension: "m4r")!
         
         do {
@@ -292,7 +296,7 @@ class ViewController: UIViewController {
             player = try AVAudioPlayer(contentsOf: url)
             guard let player = player else { return }
             player.prepareToPlay()
-            if UserDefaultsService.getBoolValueForKey(keyString: UserDefaultsService.SHOULD_FLASH) == false {
+            if UserDefaultsService.getBoolValueForKey(keyString: UserDefaultsService.SHOULD_PLAY_SOUND) == false {
                player.volume = 0
             } else {
                 player.volume = 1
@@ -302,10 +306,6 @@ class ViewController: UIViewController {
             player.delegate = self
         } catch let error {
             print(error.localizedDescription)
-        }
-        
-        if UserDefaultsService.getBoolValueForKey(keyString: UserDefaultsService.SHOULD_VIBRATE) {
-            AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
         }
 
     }

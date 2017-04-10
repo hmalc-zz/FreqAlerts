@@ -48,7 +48,7 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1eG-2x-wpj">
                                 <rect key="frame" x="301" y="39" width="51" height="31"/>
                                 <connections>
-                                    <action selector="switch:" destination="gTV-IL-0wX" eventType="valueChanged" id="YDr-8i-SBd"/>
+                                    <action selector="handleToggle:" destination="gTV-IL-0wX" eventType="valueChanged" id="wZV-RA-9XK"/>
                                 </connections>
                             </switch>
                         </subviews>
@@ -79,6 +79,7 @@
             <size key="customSize" width="366" height="113"/>
             <connections>
                 <outlet property="iconImage" destination="ilm-ip-6ik" id="5dd-uS-ukz"/>
+                <outlet property="preferenceToggle" destination="1eG-2x-wpj" id="M5I-jl-Sxt"/>
                 <outlet property="summary" destination="Mx1-JY-kan" id="rmk-dv-qg9"/>
                 <outlet property="title" destination="6Jj-Op-0dK" id="rwL-HB-0aT"/>
             </connections>

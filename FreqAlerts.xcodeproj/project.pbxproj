@@ -227,6 +227,7 @@
 				B44269881E9896A70054EFD1 /* Resources */,
 				1BDFCF27FDA2DE8CC08FEC0C /* [CP] Embed Pods Frameworks */,
 				FADD3A17F035D84D2874F929 /* [CP] Copy Pods Resources */,
+				B4C40B481E9BE36E00C7DBE4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -462,6 +463,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FreqAlertsTests/Pods-FreqAlertsTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		B4C40B481E9BE36E00C7DBE4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/AudioKit.framework/fix-framework.sh\"";
 		};
 		C68FE2FB7A3DCEE224911039 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

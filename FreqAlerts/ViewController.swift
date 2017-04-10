@@ -30,8 +30,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var welcomeString: UILabel!
     @IBOutlet weak var subtitle: UILabel!
     
-    
-    
     var player: AVAudioPlayer?
     var timer: Timer?
     
@@ -53,6 +51,7 @@ class ViewController: UIViewController {
     
     var medianFrequency: Double?
     var medianGain: Double?
+    var allowanceFactor: Double = 0.95
     
     var countdownTimer: Timer?
     var didStartListeningTimeStamp: Date?
@@ -206,6 +205,8 @@ class ViewController: UIViewController {
                 frequencyPie.setPieChart(value: averageFrequency, cutoff: frequencyCutoff!)
                 
                 if averageGain > gain && averageFrequency > frequency {
+                    lastSecondFrequencySamples = []
+                    lastSecondGainSamples = []
                     self.triggerFlash(switchOn: true)
                     self.triggerSound()
                     self.currentState = .alarmOn
@@ -228,13 +229,15 @@ class ViewController: UIViewController {
                 self.currentState = .notRecording
                 circularProgress.angle = 0
                 if let frequency = medianFrequency {
-                    UserDefaultsService.setValueForKey(keyString: UserDefaultsService.FREQUENCY_CUTOFF_VALUE, value: frequency)
-                    frequencyCutoff = frequency
+                    frequencyCutoff = frequency * allowanceFactor
+                    UserDefaultsService.setValueForKey(keyString: UserDefaultsService.FREQUENCY_CUTOFF_VALUE, value: frequencyCutoff!)
+                    self.medianFrequency = 0
                 }
                 
                 if let gain = medianGain {
-                    UserDefaultsService.setValueForKey(keyString: UserDefaultsService.GAIN_CUTOFF_VALUE, value: gain)
-                    gainCutoff = gain
+                    gainCutoff = gain * allowanceFactor
+                    UserDefaultsService.setValueForKey(keyString: UserDefaultsService.GAIN_CUTOFF_VALUE, value: gainCutoff!)
+                    self.medianGain = 0
                 }
                 configureAppearance()
                 return
@@ -326,11 +329,10 @@ class ViewController: UIViewController {
             self.currentState = .recording
         case .recording:
             self.currentState = .notRecording
-            
         case .noTestAvailable:
             triggerNewTest()
         case .testing:
-            self.currentState = .notRecording
+            print("Still testing")
         case .alarmOn:
             self.currentState = .notRecording
         }
@@ -338,6 +340,7 @@ class ViewController: UIViewController {
     }
     
     func triggerNewTest(){
+        player?.stop()
         self.didStartListeningTimeStamp = Date()
         self.currentState = .testing
         frequencySamples = []
@@ -359,10 +362,12 @@ class ViewController: UIViewController {
 extension ViewController: AVAudioPlayerDelegate {
     
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
-        player.stop()
-        self.currentState = .recording
-        triggerFlash(switchOn: false)
-        configureAppearance()
+        if self.currentState == .alarmOn {
+            player.stop()
+            self.currentState = .recording
+            triggerFlash(switchOn: false)
+            configureAppearance()
+        }
     }
 }
 
